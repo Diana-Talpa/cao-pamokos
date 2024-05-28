@@ -1,0 +1,190 @@
+.container {
+    width: 1440px;
+    margin: auto;
+    height: 1400px;
+    font-family: "Roboto", sans-serif;
+}
+
+.all-content {
+    font-family: "Roboto", sans-serif;
+    width: 1220px;
+    margin: auto;
+    color: #a3aaac;
+    background-color: #020a0e
+
+    ;
+    max-height: max-content;
+    border-radius: 10px;
+
+}
+
+.most-top {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #00141e;
+    border-bottom-right-radius: 10px;
+    margin-right: 5px;
+    width: 1200px
+
+
+}
+.most-top ul{
+    
+    color: rgb(189, 184, 184);
+    display: inline-flex;
+    justify-content: flex-start;
+    height: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+.most-top ul li {
+    list-style-type: none;
+
+    
+}
+a {
+    text-decoration: none;
+    color: rgb(226, 225, 225);
+    padding: 25px;
+    
+}
+a:active {
+    color: #ff0046;
+    border-bottom: 5px solid #ff0046;
+}
+
+table {
+    font-family: "Roboto", sans-serif;
+    border-collapse: collapse; 
+}
+tr {
+    border-bottom: 2px solid #011d28; 
+}
+td {
+    padding: 8px; 
+    position: relative; 
+}
+/* td:last-child {
+    border-left: 2px solid red; 
+} */
+td:last-child::after {
+    content: "";
+    position: absolute;
+    top: 15%; 
+    bottom: 15%; 
+    width: 2px;
+    background: #011d28;
+}
+.main-content {
+    font-family: "Roboto", sans-serif;
+   width: 1200px;
+   background-color: #00141e;
+   padding-top: 10px;
+   margin-top: 20px;
+   border-top-right-radius: 10px;
+   height: 680px;
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+   
+    
+
+
+}
+
+.geltona {
+    font-family: "Roboto", sans-serif;
+    color: #ffcd00;
+    width: 1150px;
+    border-radius: 10px;
+    background-color: #011d28;
+    margin-left: 10px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+h1 {
+    font-size: 20px;
+    
+
+    
+    
+    border-radius: 10px;
+}
+
+p {
+    font-size: large;
+    color: #a3aaac;
+    text-decoration: underline solid 2px #a3aaac;
+    margin-left: 770px;
+}
+
+.zvaigzde {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+}
+.anglija {
+    width: 30px;
+    height: 20px;
+    padding-top: 17px;
+    padding-right: 10px;
+}
+.didziosiomis {
+    text-transform: uppercase;
+}
+.etapas {
+
+   width: 1170px;
+   background-color: #011d28; 
+   margin-left: 10px;
+   border-radius: 10px;
+   
+}
+
+h2 {
+    padding: 10px;
+    font-size: 15px;
+}
+table tr td:nth-child(2) {
+    padding-right: 0;
+    width: 90px;
+}
+ table tr td:nth-child(4) {
+   width:  700px;
+}
+table tr td:nth-child(6) {
+    width: 80px;
+ 
+    
+}
+table tr td:nth-child(7) {
+    width: 190px;
+}
+
+
+img .star {
+
+    padding: 20px;;
+
+}
+
+
+
+.mazoji {
+
+    width: 20px;
+
+}
+.bold {
+    font-weight: bold;
+    color: #e6e7e7;
+}

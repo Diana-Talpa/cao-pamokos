@@ -1,0 +1,144 @@
+body {
+    background-color: black;
+    font-family: "Karla", sans-serif;
+}
+
+.content-wraper {
+    width: 1440px;
+    background-color: hsl(204, 43%, 93%);
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-top: 80px;
+}
+
+.hiest-part {
+
+    width: 630px;
+    height: 230px;
+    background-color: white;
+    margin-left: 420px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+h1 {
+    
+    font-weight: 700;
+    text-align: left;
+    margin-left: 40px;
+    padding-top: 50px;
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+}
+
+p.green {
+    
+    color: hsl(71, 73%, 54%);
+    font-weight: 500;
+    text-align: left;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+p {
+    
+    color: hsl(218, 22%, 67%);
+    text-align: left;
+    margin-left: 40px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.lowest-part {
+    width: 630px;
+    height: 240px;
+    margin-left: 420px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.monthly {
+    
+    width: 315px;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    text-align: left;
+    border-bottom-left-radius: 10px;
+    
+}
+
+h2 {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+p.big {
+    margin-left: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+   margin-top: 20px;
+   margin-bottom: 0;
+
+}
+.eilute {
+    display: flex;
+
+   
+}
+
+
+.lowest-part .monthly p.pale {
+    color: hsla(203, 44%, 93%, 0.281);
+    font-weight: 400;
+    font-size: 16px;  
+     margin-left:10px;
+     padding-top: 0px;
+}
+
+.pwhy {
+    line-height: 20px;
+}
+.under-pale {
+    font-size: 16px;
+    color: hsla(71, 66%, 64%, 0.897);
+    margin-top: 0 ;
+}
+
+.button-singup {
+    width: 240px;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%) ;
+    margin-left: 40px;
+    height: 30px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.button-singup a{
+    color: white;
+    text-decoration: none;
+}
+.why-us {
+    background-color: #54c1bf;
+    width: 315px;
+    text-align: left;
+    border-bottom-right-radius: 10px;
+
+}
+
+h2.why {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+.pwhy
+{
+    color: hsla(203, 44%, 93%, 0.582);
+    font-size: 14px;
+    font-weight: 400;
+}
+

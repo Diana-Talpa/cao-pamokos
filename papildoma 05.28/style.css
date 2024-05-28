@@ -1,0 +1,244 @@
+body {
+    background-color: black;
+    
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width : 1300px;
+    background-color: white;
+}
+
+.header {
+    
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    background-color: hsl(193, 100%, 96%);
+    padding-bottom: 50px;
+    margin-bottom: 130px;
+}
+.head-top {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 50px 70px;
+}
+
+.logo {
+    width: 180px;
+    height: 28px;
+
+}
+.try-it-free {
+
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 11px 3px rgba(37,63,75,0.15);
+    
+
+
+}
+.try-it-free a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+.head-body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.head-body-1 {
+width: 500px;
+margin-left: 70px;
+padding-top: 70px;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+}
+
+.head-body-1 p {
+    font-weight: 400;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.get-started {
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 10px 4px 1px rgba(37,63,75,0.08);
+    height: 20px;
+    width: 225px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 30px;
+    
+}
+
+.get-started a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+.mockups {
+    height: 440px;
+    margin-right: 70px;
+
+}
+
+/* head part ended */
+
+.vidus {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    box-shadow: 0px 0px 11px 3px rgba(37,63,75,0.15);
+    margin: 40px 90px 0px 90px;
+    height: 400px;
+    justify-content: space-between;
+    border-radius: 20px;
+
+}
+
+.grow {
+    height: 300px;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+
+.textas {
+    margin-top: 140px;
+    margin-left: 120px;
+}
+
+.textas-right {
+    margin-top: 140px;
+    margin-right: 30px;
+}
+
+.vidus h2 {
+
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+.folowing {
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.your {
+    height: 300px;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+
+/* body part ended */
+
+footer {
+    position: relative;
+}
+.pries-paskutinis {
+    width: 700px;
+    height: 260px;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 11px 3px rgba(37,63,75,0.15);
+}
+.pries-paskutinis h2 {
+
+    font-size: 29px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+.get-started-last {
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    height: 20px;
+    padding: 25px;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 10px 4px 1px rgba(37,63,75,0.08);
+    border-radius: 40px;
+    margin-left: 180px;
+}
+.pries-paskutinis a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.apacia {
+    margin-top: 300px;
+    height: 500px;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    color: white;
+}
+
+.fot-1 {
+    margin-top: 200px;
+    margin-left: 120px;
+     text-align: justify;
+    font-family: "Open Sans", sans-serif;
+}
+
+.fot-1 p{
+    margin-top: 40px;
+}
+
+
+.location::before {
+    content: url(images/icon-location.svg);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+
+}
+
+.location {
+    margin-left: 40px;
+}
+   
+.number::before {
+    
+    content: url(/images/icon-phone.svg);
+   margin-right: 20px;
+   margin-top: 20px;
+    
+}
+
+.emailas::before {
+    content: url(images/icon-email.svg);
+    margin-right: 20px;
+}
