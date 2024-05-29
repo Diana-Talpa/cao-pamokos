@@ -1,0 +1,59 @@
+.container {
+    text-align: center;
+    color: white;
+}
+
+.content-wrapper {
+    background-color: #2F4F4F;
+    width: 500px;
+    height:600px;
+    margin: auto;
+    display: block;
+    font-size: 18px;
+}
+h1 {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+span {
+    background-color: rgb(255, 136, 239);
+}
+
+input:read-only {
+    background-color: rgb(150, 148, 148);
+  }
+
+input:valid,
+textarea:valid,
+input:in-range {
+  border: 2px solid green;
+}
+
+input:invalid,
+textarea:invalid,
+input:out-of-range {
+  border: 2px solid red;
+}
+
+input:required,
+textarea:required {
+  border-left: 2px solid rgb(197, 107, 197);
+}
+
+.sutikti:hover {
+  background-color: rgb(12, 77, 12);
+}
+
+input[type="checkbox"]:checked + label {
+  color: blue;
+}
+.sutikti {
+  background-color: rgb(12, 163, 12);
+  color: white;
+}

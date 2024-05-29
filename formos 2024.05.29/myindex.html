@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Fancy Forma</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content-wrapper">
+
+            <h1>Register to Fancy Form</h1>
+
+            <p>All Field are <span>required</span> unless marked as "optional"</p>
+
+            
+
+            <form action="">
+                <div> <label for="readonly">Your unique ID that can't change</label> <br>
+                    <input type="text" readonly id="readonly " name="readonly" value="YBX0123">
+                </div>
+
+                <div>
+                    <label for="email"> Email:</label> <br>
+                        <input type="email" id="email" name="email" required>
+                    
+                </div>
+
+                <div>
+                    <label for="password"> Password:</label> <br>
+
+                        <input type="password" name="password" id="password" required>
+
+                    
+                </div>
+
+                <div>
+                    <label for="Age">Age:</label> <br>
+                        <input style="width: 40px;" type="number" id="age" name="age" min="18" max="65" required >
+                    
+                </div>
+
+                <div>
+                    <label for="you">Tell us a little about yourself (optional):</label> <br>
+                    <textarea minlength="5" maxlength="300" name="you" id="you" required></textarea> 
+                </div>
+
+                <div>
+                    <input type="checkbox" id="check" name="I agree" required>
+                    <label for="check"> I agree with the Terms & Conditions</label>
+                </div>
+
+                <div>
+                    <button class="sutikti" type="submit"> Register</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
