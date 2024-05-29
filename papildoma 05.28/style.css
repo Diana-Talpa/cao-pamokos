@@ -232,7 +232,7 @@ footer {
    
 .number::before {
     
-    content: url(/images/icon-phone.svg);
+    content: url(icon-phone.svg);
    margin-right: 20px;
    margin-top: 20px;
     
@@ -241,4 +241,52 @@ footer {
 .emailas::before {
     content: url(images/icon-email.svg);
     margin-right: 20px;
+}
+
+.fot-2 {
+    position: absolute;
+    top: 60%;
+    right: 45%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.apacia a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.fot-3 {
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+
+}
+
+.fot-4 {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.ikoneles a{
+    padding-right: 10px;
+}
+
+.fot-4 p {
+    position: absolute;
+    top: 550%;
+    right: -150%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+
+
 }
