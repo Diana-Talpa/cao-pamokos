@@ -1,0 +1,152 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.content-wrapper {
+    background-color: #F8FAFC;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+span {
+    color: blue;
+}
+.top-top {
+display: flex;
+justify-content: space-between;
+height: 80px;
+background-color: white;
+padding: 20px;
+box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+}
+.fa-brands.fa-facebook {
+    color: rgb(81, 81, 247);
+    margin-right: 10px;
+}
+.fa-brands.fa-twitter {
+    color: rgb(81, 81, 247);
+    margin-right: 10px;
+}
+.in {
+    height: 15px;
+}
+.socials {
+    padding: 30px 20px 20px 20px;
+}
+.h1top {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.your-task {
+    margin-top: 150px;
+    height: 150px;
+    width: 700px;
+    background-color: white; 
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+input::placeholder{
+    color: #96A3B7;
+    background-color: #eff1f3;
+}
+input {
+    background-color: none;
+    width: 450px;
+    height: 23px;
+    border: 2px solid rgb(225, 234, 238);
+    border-right: none;
+    border-radius: 5px;
+}
+button {
+    width: 120px;
+    color: white;
+    background-color: blue;
+    border: none;
+    margin-left: none;
+    padding-left: none;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+p {
+    text-align: left;
+    font-size: 12px;
+    color: rgb(160, 20, 20);
+    font-weight: 600;
+    margin-left: 60px;
+}
+.task-do {
+    height: 60px;
+    width: 700px;
+    background-color: white; 
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.to-do {
+    margin-bottom: 0px;
+    padding-top: 0;
+}
+.to-do h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-left: 80px;
+}
+
+.trash {
+    padding-right: 50px;
+    margin-top: 10px;
+}
+.fa-solid.fa-pen-to-square {
+    margin-right: 10px;
+    color: rgb(8, 59, 8);
+}
+.fa-solid.fa-trash {
+    color: rgb(107, 34, 34);
+}
+
+.task-done {
+    height: 60px;
+    width: 700px;
+    background-color: white; 
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+
+}
+.now-done {
+    display: flex;
+}
+.fa-regular.fa-circle-check{
+    color: rgb(8, 59, 8);
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.check {
+    margin-top: 10px;
+}
+.now-done h2 {
+    font-size: 28px;
+    margin-top: 0;
+    text-decoration: line-through;
+    
+}
