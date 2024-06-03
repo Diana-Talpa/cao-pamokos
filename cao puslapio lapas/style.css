@@ -259,6 +259,13 @@ text-align: left;
 
 /* vaizdo irasu pabaiga*/
 
+.juodas {
+    height: 50px;
+    width: 390px;
+    background-color: #000;
+    color: white;
+    padding-top: 30px;
+}
 .ritmu {
     width: 80px;
 }
@@ -280,6 +287,9 @@ audio {
     object-fit: cover;
 }
 
+controls {
+
+}
 button {
     border: 2px solid black;
 }
