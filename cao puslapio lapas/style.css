@@ -33,6 +33,23 @@
     height: 40px;
 }
 
+.rotate-1 {
+    display: block;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    height: 130px;
+    -webkit-animation: spin 7s linear infinite;
+    -moz-animation: spin 7s linear infinite;
+    animation: spin 7s linear infinite;
+}
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+.rotate-1:hover {
+    -webkit-animation: none;
+}
 
 .fixed-head a {
     text-decoration: none;
@@ -285,10 +302,6 @@ audio {
     width: 60px;
     height: 50px;
     object-fit: cover;
-}
-
-controls {
-
 }
 button {
     border: 2px solid black;
