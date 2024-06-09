@@ -1,0 +1,308 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-height: max-content;
+    background-color: #F2F2F2;
+}
+.fixed {
+    width: 100%;
+    position:fixed;
+    top:0;
+    z-index: 99999;
+}
+.fixed-head {
+    
+    height: 80px;
+    display: flex;
+    background-color: #ffff;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+    color: #000;   
+}
+.navigacija{
+        margin-top: 30px;
+}
+.logo {
+    height: 40px;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+.logotipas {
+    margin-bottom: 70px;
+    height: 40px;
+}
+
+.rotate-1 {
+    display: block;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    height: 130px;
+    -webkit-animation: spin 9s linear infinite;
+    -moz-animation: spin 9s linear infinite;
+    animation: spin 9s linear infinite;
+}
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+.rotate-1:hover {
+    -webkit-animation: none;
+}
+
+.fixed-head a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 30px;   
+    
+}
+.fixed-head a:hover {
+    color: #363535;
+}
+.skambinti {
+    height: 40px;
+    width: 150px;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none;
+}
+   
+.skambinti:active{
+    box-shadow: 0px 0px 14px -2px rgba(0,29,255,1);
+
+}
+ 
+.skambinti:hover {
+    background-color: rgb(91, 91, 209);
+}
+/* top end*/
+
+.vidus {
+    max-width: 1150px;
+    
+    margin: auto;
+    margin-top: 80px;
+    font-family: "Roboto", sans-serif;
+}
+
+    
+.kainu-skaiciuokle {
+    margin-left: 990px;
+    width:180px ;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+}
+.vidus a:first-of-type {
+    text-decoration: none;
+    color: black;
+}
+
+.it-test {
+    height: 100px;
+    width: 1150px;
+    background-image: url(https://codeacademy.lt/wp-content/uploads/2021/05/Desktop_banner-2048x140.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    text-align: right;
+    padding-top: 70px;
+    padding-right: 40px;
+}
+.main-heading {
+    text-align: left;
+    font-size: 72px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.dvi-puses {
+    width: 1300px;
+    display: flex;
+}
+
+.right-side img{
+    width: 97px;
+    height: 97px;
+}
+.right-side {
+    display: flex;
+    flex-wrap: wrap;
+}
+.kursai-1 {
+   width: 310px; 
+   padding: 30px;
+   background-color: white;
+   text-align: left;
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+    position: relative;
+    align-self: stretch;
+   
+    
+   
+}
+
+span {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: max-content;
+    height: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(211, 42, 174);
+    text-align: center;
+    border-radius: 30px;
+}
+.kursai-1 p:last-of-type {
+    justify-content: end;
+}
+.aprasymas {
+    font-weight: 300;
+}
+/* end right side*/
+
+
+.left-side {
+    text-align:left ;
+    padding: 40px;
+    background-color: white;
+    height: max-content;
+    position: sticky;
+    top: 50px;
+    margin: 20px 20px 0px 0px;
+}
+
+select {
+    background-color: #F2F2F2;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+    height: 40px;
+    padding-left: 20px;
+
+    width: 300px;
+    font-size: 12px;
+    border: none;
+}
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.mazasis {
+    font-weight: 200;
+}
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+
+}
+.left-side button {
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+}
+/* midle end*/
+footer {
+    background-color: black;
+}
+.apacia {
+    margin-top: 200px;
+    background-color: #000000;
+    display: flex;
+    
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    line-height: 40px;
+    padding: 100px 0 100px 350px;
+    text-align: left;
+    
+}
+.apacia p {
+    margin-left: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+ul{
+    margin-top: 0;
+}
+.apacia a{
+    color: #929497;
+    text-decoration: none;
+    font-weight: 300;
+}
+.apacia a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    text-decoration-color: white;
+}
+ul li {
+    list-style-type: none;
+}
+.logo-foot {
+    margin-left: 40px;
+    height:40px ;
+    margin-bottom: 60px;
+    color: white;
+}
+.foot2 {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.foot3{
+    margin-left: 450px;
+    margin-top: 120px;
+}
+.foot3 a{
+    margin-right: 20px;
+
+}
+
+.foot4 a:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.foot4 {
+    color:#929497;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    margin-left: 390px;
+    font-size: 14px;
+    margin-top: 200px;
+
+}
+.foot4 a:last-of-type{
+    color: #929497;
+    font-weight: 300;
+}
+.foot4 a:last-of-type:hover {
+    color: white;
+    text-decoration: underline;
+}
+.foot4 a {
+    text-decoration: none;
+    color: white;
+    margin-right: 200px;
+}
+.foot4 img {
+    width: 110px;
+}
