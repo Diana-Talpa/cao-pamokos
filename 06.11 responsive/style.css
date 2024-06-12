@@ -101,17 +101,18 @@ footer {
     flex-direction: column;
 }
 .navigation {
-    width: max-content;
+    
     grid-column: 1 / 2;
     
 }
 .box-1{
     grid-column: 1 / 2;
-    grid-template-rows: 60px;
+    grid-row: 80px;
 
 }
 .box-3 {
     grid-column: 1 / 2;
+    height: 100px;
     
 
 }
