@@ -118,11 +118,27 @@
 
   }
 
+  .services:hover{
+    transition-property: padding-left ;
+    background-color: #d9d5f5;
+    transition-duration: 2s,;
+    padding-left: 25px;
+  }
+  
+  .tours-cards {
+    justify-content: space-between;
+  }
+  .card:hover {
+    transition-property: box-shadow;
+    box-shadow: 0px 0px 32px 5px rgba(0,0,0,0.75);
+  }
+
   #our-services {
     background-color: #F8FBFC;
     margin-bottom: 40px;
     padding-left: 20px;
   }
+
   .card img{
     height: 170px;
     width: 260px;
@@ -149,6 +165,7 @@
     margin: 10px 0px 40px 0px;
     width: max-content;
     position: relative;
+    transition-duration: 2s;
   }
   .card p{
     color: black;
@@ -358,8 +375,8 @@ footer {
   display: flex;
 }
 #gallery img{
-  width: 275px;
-  height: 190px;
+  max-width: 275px;
+  max-height: 190px;
   border: none;
 }
 #gallery h3{
