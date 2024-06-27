@@ -1,0 +1,30 @@
+h1 {
+  color: yellow;
+  background-color: blue;
+  text-transform: uppercase;
+}
+
+div h3 {
+  color: chartreuse;
+}
+
+li {
+  color: green;
+}
+
+ul li {
+  text-transform: uppercase;
+}
+
+span.bold-text {
+  font-weight: bold;
+}
+
+.important-text {
+  color: red;
+  text-decoration: underline;
+}
+
+li:first-child {
+  text-decoration: line-through;
+}

@@ -1,0 +1,118 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 16px;
+}
+
+.page-title {
+  border-bottom: 2px solid black;
+  padding-bottom: 30px;
+  margin-top: 0;
+}
+
+.page-wrapper {
+  display: flex;
+}
+
+.navigation-wrapper {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 30px;
+  width: 30%;
+}
+
+.navigation-list {
+  border-bottom: 2px solid black;
+  padding-bottom: 30px;
+}
+
+.navigation-inner-list {
+  border: none;
+}
+
+.navigation-list a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.navigation-inner-list a {
+  color: rgb(167, 167, 167);
+}
+
+.navigation-inner-list .active a {
+  color: white;
+}
+
+.navigation-list li::marker {
+  color: red;
+}
+
+.navigation-list li {
+  list-style-type: none;
+}
+
+.navigation-list li.active {
+  list-style-type: disc;
+}
+
+.navigation-inner-list li,
+.navigation-inner-list li.active {
+  list-style-type: circle;
+}
+
+.content-wrapper {
+  width: 70%;
+  padding-right: 30px;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+  padding: 15px 0 15px 15px;
+}
+
+.content-header ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content-header li {
+  display: inline;
+  padding-right: 15px;
+}
+
+.content-header li:last-child {
+  padding-right: 0;
+}
+
+.breadcrumbs-list {
+  text-transform: uppercase;
+}
+
+.breadcrumbs-item:first-child {
+  font-weight: 700;
+}
+
+.order-item.active {
+  color: blue;
+}
+
+.content {
+  padding-left: 30px;
+}

@@ -1,0 +1,48 @@
+form {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+input {
+  border: 2px solid blue;
+}
+
+input:disabled {
+  border-color: red;
+}
+
+input[type="text"]:read-only {
+  border-color: orange;
+}
+
+button:disabled {
+  background-color: red;
+}
+
+input:required {
+  border-color: brown;
+}
+
+input:invalid {
+  background-color: blanchedalmond;
+}
+
+input:invalid + label {
+  color: red;
+}
+
+form:invalid {
+  border-color: red;
+}
+
+input:required:valid {
+  border-color: green;
+}
+
+form:valid {
+  background-color: aquamarine;
+}
+
+form:focus-within {
+  box-shadow: 0 0 10px 8px rgba(0,0,0,0.2);
+}

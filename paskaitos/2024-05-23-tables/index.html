@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tables!</h1>
+
+  <table>
+    <caption>
+      Front-end web developer course 2021
+    </caption>
+
+    <colgroup>
+      <col span="3" />
+      <col span="2" class="bg-pink" />
+      <col span="2" class="bg-blue" />
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th scope="col">Course</th>
+        <th scope="col">Person</th>
+        <th scope="col">Most interest in</th>
+        <th scope="col">Not interest in</th>
+        <th scope="col">City</th>
+        <th scope="col">Language</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row" rowspan="2">1st</th>
+        <th scope="row">Chris</th>
+        <td>HTML tables</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <th scope="row">Dennis</th>
+        <td>Web accessibility</td>
+        <td>45</td>
+        <td>45</td>
+        <td>45</td>
+        <td>45</td>
+      </tr>
+
+      <tr class="test">
+        <th scope="row" rowspan="2">2nd</th>
+        <th scope="row">Sarah</th>
+        <td>JavaScript frameworks</td>
+        <td>29</td>
+        <td>29</td>
+        <td>29</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <th scope="row">Karen</th>
+        <td>Web performance</td>
+        <td>36</td>
+        <td>36</td>
+        <td>36</td>
+        <td>36</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th colspan="5" rowspan="2">Totals:</th>
+        <th scope="row">Average age</th>
+        <td>33</td>
+      </tr>
+      <tr>
+        <th scope="row">Max age</th>
+        <td>45</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

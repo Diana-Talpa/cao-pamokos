@@ -1,0 +1,72 @@
+h1.header {
+  color: red !important;
+}
+
+h1 {
+  color: green !important;
+}
+
+#header-id#header-id {
+  color: bisque;
+}
+
+h1#header-id.header {
+  color: blueviolet;
+}
+
+#header-id.header {
+  color: yellow;
+}
+
+h1#header-id {
+  color: green;
+}
+
+#header-id {
+  color: red;
+}
+
+h1.header.header {
+  color: tomato;
+}
+
+.header.header {
+  color: chocolate;
+}
+
+html body h1.header {
+  color: yellowgreen;
+}
+
+body h1.header {
+  color: turquoise;
+}
+
+h1.header {
+  color: brown;
+}
+
+.header {
+  color: violet;
+}
+
+html head + body h1 {
+  color: blueviolet;
+}
+
+html body h1 {
+  color: purple;
+}
+
+body h1 {
+  color: pink;
+}
+
+h1 {
+  color: red;
+  color: green;
+}
+
+h1 {
+  color: orange;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <form action="/form-submit.html"> -->
+  <form>
+    <div class="form-control">
+      <label for="first-name">First name</label>
+      <input type="text" id="first-name" name="person-first-name" placeholder="Enter your first name" value="John" minlength="2" readonly />
+    </div>
+
+    <div class="form-control">
+      <label for="age">Age</label>
+      <input type="number" id="age" min="0" max="100" name="person-age" step="5" placeholder="Age..." value="20" disabled />
+    </div>
+
+    <div class="form-control">
+      <input type="email" id="email" name="person-email" required />
+      <label for="email">Email</label>
+    </div>
+
+    <div class="form-control">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="person-password" required />
+    </div>
+
+    <div class="form-control">
+      <label for="color">Color</label>
+      <input type="color" id="color" name="person-color"/>
+    </div>
+
+
+    <fieldset>
+      <legend>Gyvenamasis miestas</legend>
+
+      <div class="form-control">
+        <input type="radio" id="city-1" name="person-city" value="vilnius" checked />
+        <label for="city-1">Vilnius</label>
+      </div>
+  
+      <div class="form-control">
+        <input type="radio" id="city-2" name="person-city" value="kaunas" />
+        <label for="city-2">Kaunas</label>
+      </div>
+  
+      <div class="form-control">
+        <input type="radio" id="city-3" name="person-city" value="klaipeda" />
+        <label for="city-3">Klaipėda</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dominančios programavimo kalbos</legend>
+
+      <div class="form-control">
+        <input type="checkbox" id="language-1" name="language" value="JS" />
+        <label for="language-1">JS</label>
+      </div>
+
+      <div class="form-control">
+        <input type="checkbox" id="language-2" name="language" value="CSS" />
+        <label for="language-2">CSS</label>
+      </div>
+    </fieldset>
+
+    <button type="submit" disabled>Submit 1</button>
+    <!-- <input type="submit" value="Submit 2" /> -->
+  </form>
+</body>
+</html>

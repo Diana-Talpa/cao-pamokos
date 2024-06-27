@@ -1,0 +1,25 @@
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.test {
+  background-color: azure;
+}

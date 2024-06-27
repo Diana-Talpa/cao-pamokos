@@ -1,0 +1,42 @@
+@use "./responsive";
+
+.video-section {
+  .video-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .video-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+
+      @include responsive.xl {
+        grid-column-end: span 2;
+      }
+
+      @include responsive.lg {
+        grid-column-end: span 1;
+      }
+
+      @include responsive.md {
+        grid-column-end: span 2;
+      }
+
+      &:first-of-type {
+        grid-column-end: span 2;
+      }
+
+      .video-title {
+
+      }
+
+      iframe {
+        width: 100%;
+      }
+    }
+
+    // .video-wrapper:first-of-type {
+    //   grid-column-end: span 2;
+    // }
+  }
+}
