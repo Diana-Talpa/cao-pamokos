@@ -1,9 +1,11 @@
 @use "./responsive";
-@use "./first-section";
+@use "./firs-rection";
 @use "./second-section";
 @use "./third-section";
 @use "./fourth-section";
 @use "./fift-section";
+
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -28,6 +30,10 @@
         overflow: hidden;
         top: 602px;
         left: 0px;
+
+        @include responsive.responsive-xs{
+            display: none;
+        }
     }
     .yellow {
         color: #F3B562;
@@ -36,6 +42,12 @@
         text-transform: uppercase;
         line-height: 32px;
         margin-top:40px ;
+
+        @include responsive.responsive-xs{
+           font-size: 13px;
+           line-height: 18px;
+           
+        }
     }
     header {
         display: flex;
@@ -44,17 +56,47 @@
                 margin-left: 140px;
                 margin-top: 50px;
 
+                @include responsive.responsive-xs{
+                    margin-left: 32px;
+                }
+
                 img:first-of-type {
                     width: 69px;
                     height: 50px;
                     margin-right: 12px;
+
+                    @include responsive.responsive-xs{
+                        width: 45px;
+                        height: 33px;
+                    }
                 }
                 .logo-part-2{
                     margin-bottom: 20px;
+                    @include responsive.responsive-xs{
+                        height: 10px;
+                        width: 85px;
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+
+            .list{
+                height: 28px;
+                width: 28px;
+                display: none;
+                @include responsive.responsive-xs{
+                    display: block;
+                    margin-top: 42px;
+                    margin-right: 32px;
                 }
             }
             .right-nav {
+                @include responsive.responsive-xs{
+                
+                display: none;
+                }
 
+               
                 display: flex;
                 gap: 48px;
                 ul{display: flex;

@@ -13,7 +13,7 @@
         @content; 
 }
 }
-@mixin responsive-sm{
+@mixin responsive-xs{
     @media screen and (max-width: 400px) {
         @content; 
 }
