@@ -13,6 +13,16 @@
     margin: auto;
     font-family: "Lato", sans-serif;
     background-color: #fafafa;
+    position: relative;
+    overflow: hidden;
+
+    .ellipse2{
+        position: absolute;
+        overflow: hidden;
+        top: 602px;
+        left: 0px;
+    }
+
 
     .yellow {
         color: #F3B562;
@@ -24,13 +34,7 @@
     }
     header {
         display: flex;
-            justify-content: space-between;
-        .navigation-top {
-            
-            
-           
-            }
-            
+            justify-content: space-between;         
             .left-nav {
                 margin-left: 140px;
                 margin-top: 50px;
@@ -40,10 +44,8 @@
                     height: 50px;
                     margin-right: 12px;
                 }
-
-                img {
-                    width: 128px;
-                    height: 15px;
+                .logo-part-2{
+                    margin-bottom: 20px;
                 }
             }
             .right-nav {
@@ -87,7 +89,11 @@
 
 
         main {
+            footer {
+                background-color: #647B64;
+            }
             .first-section {
+                
                 display: flex;
                 justify-content: space-between;
                 margin-left: 180px;
@@ -115,9 +121,20 @@
                     font-size: 16px;
                 }
                 .first-section-left{
+                    position: relative;
                     width: 495px;
                     height: 375px;
+
+                    .ellipse{
+                        width: 84px;
+                        height: 84px;
+                        position: absolute;
+                        z-index: 0;
+                        top: 69px;
+                        left: 148px;
+                    }
                 }
+                
                 a{
                     text-decoration: none;
                     text-transform: uppercase;
@@ -153,12 +170,23 @@
                 display: flex;
                 flex-wrap: wrap;
                 padding-bottom: 147px;
+
                .second-section-left{
-    
-                margin-top: 244px;
-                margin-left: 140px;
-                margin-right: 124px;
-    
+                    position: relative;
+                    margin-top: 244px;
+                    margin-left: 140px;
+                    margin-right: 124px;
+                    
+
+                .rectangle{
+                    width: 717px;
+                    height: 153px;
+                    position: absolute;
+                    top: -40px;
+                    right: -130px;
+                    z-index: 0;
+                    overflow: hidden;
+                }
                 
                 h2{
                     font-size: 41px;
@@ -256,6 +284,26 @@
                     display: flex;
                     margin-left: 140px;
                     gap: 30px;
+                    position: relative;
+                    
+
+                    .relative{
+                        position: relative;
+                        width: 350px;
+                        height: 338px;
+                        background-color: #FEFEFE;
+                        top: 164px;
+                        left: -34px;
+                        
+                    
+                    }
+                    .relative-2{
+                        position: relative;
+                        height: 338px;
+                        width: 350px;
+                        margin-left: 585px;
+                        margin-top: 193px;
+                    }
                     
     
                     .ts-box {
@@ -282,20 +330,60 @@
     
                     }
                     .ts-box-2{
+                        position: absolute;
                         background-color: #647B64;
                         color: #FFFFFF;
+                        top: 0;
+                        left: 400px;
+                        height: 338px;
+
+
                         
                     }
                     .ts-box-1{
+                        background-color: #FEFEFE;
+                        position: absolute;
+                        z-index: 10;
+                        top: 0px;
+                        left: 0px;
+                        opacity: 1;
+
+
+                        .dots{
+                            position: relative;
+                            z-index: 2;
+                            top: -200px;
+                            left: -40px;
+                            opacity: 0.2;
+
+                        }
                         h3{
                             text-transform: uppercase;
                             color: #333333;
+                            
                         }
                     }
                     .ts-box-3{
+                        position: absolute;
+                        background-color: #FEFEFE;
+                        z-index: 3;
+                        top: 0px;
+                        left: 800px;
+                        height: 338px;
+                        
+
+                        .rectangle-2{
+                            width:463px;
+
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
+                        }
                         h3{
                             text-transform: uppercase;
                             color: #333333;
+                            
+                            
                         }
                     }
                                     
@@ -306,12 +394,29 @@
                 margin-top: 171px;
                 margin-right: 160px;
                 display: flex;
-    
-                img{
+                position: relative;
+                z-index: 10;
+                margin-left: 403px;
+
+               
+
+                .rectangle3{
+                    position: relative;
+                    top: 60px;
+                    right: 180px;
+                    z-index: 1;
+                }
+                .zmones{
+                    position: absolute;
+                    display: block;
                     width: 563px;
                     height: 545px;
                     margin-left: 140px;
                     margin-right: 165px;
+                    top: 0;
+                    right: 410px;
+                    background-color: #ffffff;
+                    z-index: 80;
                 }
     
                 h2{
@@ -404,12 +509,8 @@
                     min-width: 350px;
                     border-radius: 8px;
                     padding: 32px 32px 32px 40px;
-                    background-image: linear-gradient(
-                        180deg,
-                        hsl(0deg 0% 100%) 9%,
-                        hsl(344deg 0% 90%) 82%,
-                        hsl(0deg 0% 80%) 100%
-                      );
+                    background:linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%);
+
     
                     .fs-box-flex{
                         display: flex;
@@ -433,23 +534,146 @@
                     }
                 }
             }
-    
-            footer {
-                .foot-content{
-                    display: flex;
-                    background-color: #e40101;
-                    padding: 100px  140px 97px 140px;
-                .bottom-logo {
-                    // Add your styles here
+       
+        }
+
+        .foot-space {
+            background-color: #F0DCC5;
+            display: flex;
+            padding: 103px 140px 93px 140px;
+            margin-top: 172px;
+            
+            .logo-part-2{
+                margin-bottom: 20px;
+                margin-left: 11px;
+            }
+            p{
+                margin-top: 17px;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 17px;
+                color: #4F4F4F;
+                font-weight: 400;
+            }
+            .p2{
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+            .p3{
+                margin-top: 0;
+                margin-bottom: 19px;
+            }
+            .foot-second-ul{
+                margin-right: 162px;
+                margin-left: 66px;
+            }
+            ul{
+                padding: 0;
+                margin-top: 0;
+            }
+            li{
+                margin-bottom: 12px;
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #333333;
                 }
-    
-                .socials {
-                    // Add your styles here
-                }
+
+                .first-of-type{
+                    color: #647B64;
+                    font-size: 20px;
+                    font-weight: 500;
+                
                 }
             }
-        
+            
+            .li-first-of-type{
+                margin-bottom: 24px;
+            }
+
+            .socials{
+                position: relative;
+
+                img{
+                    margin-right: 16px;
+                }
+
+                .round-icon-img1{
+                    margin-right: 0;
+                }
+
+                .round-icon-2{
+                    margin-left: 48px;
+                }
+
+                .round-icon{
+                    padding: 7px 7px 4px 7px;
+                    border-radius: 50px;
+                    background-color: #E1D2BD;
+                    position: absolute;
+                    top: 0px;
+                    left:0px
+                }
     
+            }
+            form{
+                margin-left: 140px;
+
+                label{
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    color: #647B64;
+                    line-height: 30px;
+                }
+
+                input{
+                    width: 283px;
+                    height: 113px;
+                    border: none;
+                    margin-top: 13px;
+                    margin-bottom: 28px;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #4F4F4F;
+                    padding-left: 24px;
+                    padding-top: 12px;
+                    line-height: 24px;
+                    padding-bottom: 70px;
+                   
+                    
+                }
+
+                button{
+                    border-radius: 2px;
+                    height: 57px;
+                    width: 283px;
+                    position: relative;
+                    text-align: left;
+                    border: none;
+                    color: #FEFEFE;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding: 0px 22px;
+                    background: linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+
+                    &::after{
+                        content: url(images/Vector.svg) ;
+                        width: 22px;
+                        height: 15px;
+                        position: absolute;
+                        top: 21px;
+                        left: 238px
+                    }
+                }
+            }
+
+            
+            
         }
         
     }
