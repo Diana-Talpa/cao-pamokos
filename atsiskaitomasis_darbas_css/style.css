@@ -106,6 +106,7 @@
 .content-wrapper main .first-section .button-text {
   margin: 0;
   font-size: 16px;
+  color: #FEFEFE;
 }
 .content-wrapper main .first-section .first-section-left {
   position: relative;
@@ -182,6 +183,9 @@
   margin-top: 0;
   color: #4F4F4F;
 }
+.content-wrapper main .second-section .second-section-left p:last-of-type {
+  color: #FEFEFE;
+}
 .content-wrapper main .second-section .second-section-left a {
   text-decoration: none;
   text-transform: uppercase;
@@ -208,6 +212,10 @@
 .content-wrapper main .second-section .second-section-left .get-started-button .button-text {
   margin: 0;
   font-size: 16px;
+  color: #FEFEFE;
+}
+.content-wrapper main .second-section .second-section-left .get-started-button p {
+  color: #FEFEFE;
 }
 .content-wrapper main .second-section .boxes {
   display: grid;
