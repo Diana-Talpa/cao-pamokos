@@ -1,3 +1,5 @@
+@use "./responsive";
+
 .fourth-section {
     margin-top: 171px;
     margin-right: 160px;
@@ -6,13 +8,39 @@
     z-index: 10;
     margin-left: 403px;
 
-   
+    @include responsive.responsive-xl{
+        margin-left: 200px;
+      }
+
+
+    @include responsive.responsive-xs{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    @include responsive.responsive-lg{
+        margin-left: 40px;
+    }
 
     .rectangle3{
         position: relative;
         top: 60px;
         right: 180px;
         z-index: 1;
+
+        @include responsive.responsive-lg{
+            right: 330px;
+        }
+        
+        @include responsive.responsive-xs{
+            height: 285px;
+            width: 285px;
+            top:100px;
+            right: 210px;
+ 
+         }
+
+        
     }
     .zmones{
         position: absolute;
@@ -25,8 +53,30 @@
         right: 410px;
         background-color: #ffffff;
         z-index: 80;
+
+        @include responsive.responsive-xs{
+            right: 0px;
+            width: 32px;
+            height: 278px;
+            margin-top: 70px;
+            margin-right: 341px;
+ 
+         }
     }
 
+    .small-zmones{
+        display: none;
+        @include responsive.responsive-xs{
+            display: block;
+ 
+         }
+    }
+    .big-zmones{
+        @include responsive.responsive-xs{
+            display: none;
+ 
+         }
+    }
     h2{
         font-size: 41px;
         font-weight: 500;
@@ -35,6 +85,14 @@
         margin-bottom: 24px;
         text-transform: uppercase;
         color: #647B64;
+
+        @include responsive.responsive-xs{
+            font-size: 22px;
+            line-height: 24px;
+            margin-bottom: 16px;
+            margin-top: 8px;
+ 
+         }
     }
     p{
         color: #4F4F4F;
@@ -43,9 +101,27 @@
         line-height: 21px;
         margin-bottom: 40px;
         margin-top: 0;
+
+        @include responsive.responsive-xs{
+            font-size: 10px;
+            line-height: 13px;
+            margin-bottom: 0px;
+ 
+         }
     }
     .fourth-section-right {
         margin-top: 144px;
+
+        @include responsive.responsive-lg{
+            margin-left: -250px;
+        }
+        @include responsive.responsive-xs{
+            width: 258px;
+            height: 185px;
+            margin-left: -180px;
+         }
+
+         
         
         
     
@@ -64,6 +140,19 @@
             padding: 26px 0 25px 29px;
             position: relative;
             margin-top: 40px;
+
+            &:hover{
+                box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.75);
+               }
+
+            @include responsive.responsive-xs{
+                margin-top: 24px;
+                width: 195px;
+                height: 41px;
+                padding: 15px 0px 14px 16px;
+                border-radius: 1px;
+                margin-bottom: 0px;
+            }
         
         &::after{
             content: url(images/Vector.svg) ;
@@ -71,11 +160,24 @@
             height: 15px;
             position: absolute;
             top: 32px;
-            left: 308px
+            left: 308px;
+
+            @include responsive.responsive-xs{
+                content: url(/atsiskaitomasis_darbas_css/images/small-arrow.svg);
+                width: 11px;
+                height: 8px;
+                left: 177px;
+                top: 9px;
+             }
         }
         .button-text{
             margin: 0;
             font-size: 16px;
+
+            @include responsive.responsive-xs{
+                font-size: 10px;
+                line-height: 13px;
+            }
         }
         p{
             color: white;
