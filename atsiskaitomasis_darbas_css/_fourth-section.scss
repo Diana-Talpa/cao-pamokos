@@ -16,6 +16,8 @@
     @include responsive.responsive-xs{
         margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: 119px;
+        margin-top: 0;
     }
 
     @include responsive.responsive-lg{

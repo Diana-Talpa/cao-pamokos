@@ -6,7 +6,15 @@
 
   margin-top: 150px;
 
-
+    
+  @include responsive.responsive-xs{
+    margin-left: 32px;
+    margin-bottom: 0px;
+    gap: 0px;
+    margin-top: 134px;
+    
+    
+}
 
    
 
@@ -159,6 +167,7 @@
         width: 288px;
         border-radius: 8px;
         margin-top: 0;
+        gap: 40px;
 
 
         @include responsive.responsive-lg{
@@ -175,6 +184,8 @@
             border-radius: 4px;
             grid-template-columns: 155px 155px;
             grid-template-rows: 128px 128px;
+            margin-left: 0;
+            margin-bottom: 1000px;
             
          }
          
