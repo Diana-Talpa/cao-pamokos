@@ -8,10 +8,14 @@
 
     
   @include responsive.responsive-xs{
-    margin-left: 32px;
-    margin-bottom: 0px;
-    gap: 0px;
+    margin-right: 400px;
+    margin-bottom: 147px;
+   
+    padding-bottom: 0;
     margin-top: 134px;
+    flex-direction: row-reverse;
+    justify-content: center;
+   
     
     
 }
@@ -23,16 +27,24 @@
         margin-left: 140px;
         margin-right: 124px;
 
-        @include responsive.responsive-xs{
-            margin-left: 32px;
-            margin-bottom: 10px;
-            
-        }
-        
+       
         @include responsive.responsive-lg{
             margin-left: 40px;
             margin-right: 80px;
         }
+
+        @include responsive.responsive-xs{
+            
+            margin-left: 275px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            
+            padding-bottom: 0;
+            
+            
+        }
+        
 
     .rectangle{
         width: 717px;
@@ -44,7 +56,7 @@
         overflow: hidden;
 
         @include responsive.responsive-xs{
-           width: 400px;
+           width: 285px;
            height: 68px;
            top: -10px;
            right: -55px
@@ -169,25 +181,30 @@
         margin-top: 0;
         gap: 40px;
 
-
+        @include responsive.responsive-xs{
+           
+            border-radius: 4px;
+            grid-template-columns: 155px 155px;
+            grid-template-rows: 128px 128px;
+            margin-left: 35px;
+            margin-right: 0px;
+            width: max-content;
+            gap: 0;
+            height: max-content;
+            width: 311px;
+            margin-left: 260px;
+            
+            
+         }
         @include responsive.responsive-lg{
             grid-template-columns: 200px 200px;
             grid-template-rows: 150px 150px;
 
         }
         
-        }
+    }
 
-        @include responsive.responsive-xs{
-            width: 155px;
-            height: 128px;
-            border-radius: 4px;
-            grid-template-columns: 155px 155px;
-            grid-template-rows: 128px 128px;
-            margin-left: 0;
-            margin-bottom: 1000px;
-            
-         }
+        
          
 
         .small-icon{
@@ -265,6 +282,7 @@
 
             @include responsive.responsive-xs{
                 padding: 22px 20px 24px 21px;
+                
 
                 .smart-car-color{
                     opacity: 5;

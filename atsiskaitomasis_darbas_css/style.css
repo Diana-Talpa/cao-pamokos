@@ -156,10 +156,12 @@
 }
 @media screen and (max-width: 400px) {
   .second-section {
-    margin-left: 32px;
-    margin-bottom: 0px;
-    gap: 0px;
+    margin-right: 400px;
+    margin-bottom: 147px;
+    padding-bottom: 0;
     margin-top: 134px;
+    flex-direction: row-reverse;
+    justify-content: center;
   }
 }
 .second-section .second-section-left {
@@ -167,16 +169,19 @@
   margin-left: 140px;
   margin-right: 124px;
 }
-@media screen and (max-width: 400px) {
-  .second-section .second-section-left {
-    margin-left: 32px;
-    margin-bottom: 10px;
-  }
-}
 @media screen and (max-width: 1090px) {
   .second-section .second-section-left {
     margin-left: 40px;
     margin-right: 80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .second-section .second-section-left {
+    margin-left: 275px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-bottom: 0;
   }
 }
 .second-section .second-section-left .rectangle {
@@ -190,7 +195,7 @@
 }
 @media screen and (max-width: 400px) {
   .second-section .second-section-left .rectangle {
-    width: 400px;
+    width: 285px;
     height: 68px;
     top: -10px;
     right: -55px;
@@ -308,21 +313,26 @@
   margin-top: 0;
   gap: 40px;
 }
+@media screen and (max-width: 400px) {
+  .second-section .boxes {
+    border-radius: 4px;
+    grid-template-columns: 155px 155px;
+    grid-template-rows: 128px 128px;
+    margin-left: 35px;
+    margin-right: 0px;
+    width: -moz-max-content;
+    width: max-content;
+    gap: 0;
+    height: -moz-max-content;
+    height: max-content;
+    width: 311px;
+    margin-left: 260px;
+  }
+}
 @media screen and (max-width: 1090px) {
   .second-section .boxes {
     grid-template-columns: 200px 200px;
     grid-template-rows: 150px 150px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .second-section {
-    width: 155px;
-    height: 128px;
-    border-radius: 4px;
-    grid-template-columns: 155px 155px;
-    grid-template-rows: 128px 128px;
-    margin-left: 0;
-    margin-bottom: 1000px;
   }
 }
 .second-section .small-icon img {
