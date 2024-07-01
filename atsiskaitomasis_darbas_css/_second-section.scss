@@ -3,9 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 147px;
-
-  margin-top: 150px;
-
+    margin-top: 150px;
     
   @include responsive.responsive-xs{
     margin-right: 400px;
@@ -20,13 +18,10 @@
     
 }
 
-   
-
    .second-section-left{
         position: relative;
         margin-left: 140px;
         margin-right: 124px;
-
        
         @include responsive.responsive-lg{
             margin-left: 40px;
@@ -41,11 +36,9 @@
             margin-bottom: 50px;
             
             padding-bottom: 0;
-            
-            
+                        
         }
         
-
     .rectangle{
         width: 717px;
         height: 153px;
@@ -204,9 +197,6 @@
         
     }
 
-        
-         
-
         .small-icon{
             img{
                 padding: 10px;
@@ -218,8 +208,7 @@
                 @include responsive.responsive-xs{
                     display: none;
                  }
-    
-                
+                   
             }
         }
         
@@ -264,7 +253,6 @@
                 position: absolute;
                 top: 40px;
                 opacity: 0;
-
             }
             
             &:hover .small-icon img{
@@ -272,7 +260,6 @@
                 opacity: 5;
 
             }
-
            
             &:hover {
             box-shadow: 0px 5.87px 31.33px 0px #9B94942B;
@@ -287,10 +274,7 @@
                 .smart-car-color{
                     opacity: 5;
                 }
-            }
-
-            
+            }            
         }
-
     }
 }

@@ -28,8 +28,6 @@
            margin-bottom: 12px;
         }
 
-        
-        
     }
     p{
         font-size: 20px;
@@ -59,7 +57,6 @@
         position: relative;
         width: 495px;
         height: 375px;
-
 
         @include responsive.responsive-xs{
             width: 245px;

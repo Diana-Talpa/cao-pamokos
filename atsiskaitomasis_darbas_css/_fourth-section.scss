@@ -12,7 +12,6 @@
         margin-left: 200px;
       }
 
-
     @include responsive.responsive-xs{
         margin-left: 0px;
         margin-right: 0px;
@@ -41,8 +40,7 @@
             right: 210px;
  
          }
-
-        
+       
     }
     .zmones{
         position: absolute;
@@ -62,7 +60,6 @@
             height: 278px;
             margin-top: 70px;
             margin-right: 341px;
- 
          }
     }
 
@@ -70,7 +67,6 @@
         display: none;
         @include responsive.responsive-xs{
             display: block;
- 
          }
     }
     .big-zmones{
@@ -107,8 +103,7 @@
         @include responsive.responsive-xs{
             font-size: 10px;
             line-height: 13px;
-            margin-bottom: 0px;
- 
+            margin-bottom: 0px; 
          }
     }
     .fourth-section-right {
@@ -122,11 +117,7 @@
             height: 185px;
             margin-left: -180px;
          }
-
-         
-        
-        
-    
+   
         a{
             text-decoration: none;
             text-transform: uppercase;
