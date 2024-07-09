@@ -1,43 +1,45 @@
 
 
-// let passw = 'bangladesas#'
+let passw = 'bangladesas#'
 
-// if(passw.lenght < 16) {
-//     alert('Slaptazodis per trumpas')
-// } else if(passw.lenght >= 20) {
-//     alert('Slaptazodis yra tinkamas')
-// } 
-
-
+if(passw.lenght < 16) {
+    alert('Slaptazodis per trumpas')
+} else if(passw.lenght >= 20) {
+    alert('Slaptazodis yra tinkamas')
+} 
 
 
-// const simbolsNeeded = ["#"];
-// const password = "Patrick#";
-// let specialCharacterCheck = false;
 
-// const special = (c) => {
-//   for (i = 0; i < simbolsNeeded.length; i++) {
-//     if (c === simbolsNeeded[i]) {
-//       return true;
-//     }
-//   }
-//   return false;
-// }
 
-// for (i = 0; i < password.length; i++) {
-//   if (special(password[i])) {
-//     specialCharacterCheck = true;
-//   }
-// }
-// console.log(specialCharacterCheck);
+const simbolsNeeded = ["#"];
+const password = "Patrick#";
+let specialCharacterCheck = false;
 
-// if(password.length < 16){
-//     console.log('Slaptazodis per trumpas')
-// } else if(password.length > 20) {
-//     console.log ('Slaptazodis tinkamas')
-// } else if(password.length < 20) {
-//     console.log ('Slaptazodis tinkamas , bet rekomenduojame naudoti bent 20 simboliu')
-// }
+
+//reikiaq naudoti include o ne sita visa pieva 
+const special = (c) => {
+  for (i = 0; i < simbolsNeeded.length; i++) {
+    if (c === simbolsNeeded[i]) {
+      return true;
+    }
+  }
+  return false;
+}
+
+for (i = 0; i < password.length; i++) {
+  if (special(password[i])) {
+    specialCharacterCheck = true;
+  }
+}
+console.log(specialCharacterCheck);
+
+if(password.length < 16){
+    console.log('Slaptazodis per trumpas')
+} else if(password.length > 21) {
+    console.log ('Slaptazodis tinkamas')
+} else if(password.length < 21) {
+    console.log ('Slaptazodis tinkamas , bet rekomenduojame naudoti bent 20 simboliu')
+}
 
 
 
@@ -91,11 +93,11 @@ if (amzius <= 0) {
     console.log('Eina i pradine klase');
 } else if (amzius == 10) {
     console.log('Tikriausiai mokosi pradinėje, tačiau gali būti ir penktokas.');
-} else if (amzius < 14) {
+} else if (amzius < 15) {
     console.log('Eina i pagrindine');
 } else if (amzius == 14) {
     console.log('Tikriausiai mokosi pagrindinėje, tačiau gali būti ir devintokas.');
-} else if (amzius < 18) {
+} else if (amzius < 19) {
     console.log('Eina i gimnazija');
 } else if (amzius == 18) {
     console.log('Tikriausiai mokosi gimnazijoje, tačiau mokyklą gali būti ir baigęs.');
@@ -104,3 +106,10 @@ if (amzius <= 0) {
 } else if (amzius >= 19) {
     console.log('Mokykla baigęs');
 }
+
+//reikejo naudoti 120 pabaigoje beveik typo > 120 o poto else jau butu negalimas nes perdidelis
+
+
+
+
+

@@ -144,28 +144,31 @@
 
 
 
-let weekDay = new Date().getDay();
-switch (weekDay) {
-  case 0:
-    weekDay = 'Sekmadienis';
-    break;
-  case 1:
-    weekDay = 'Pirmadienis';
-    break;
-  case 2:
-    weekDay = 'Antradienis';
-    break;
-  case 3:
-    weekDay = 'Trečiadienis';
-    break;
-  case 4:
-    weekDay = 'Ketvirtadienis';
-    break;
-  case 5:
-    weekDay = 'Penktadienis';
-    break;
-  case 6:
-    weekDay = 'Šeštadienis';
-    break;
-}
-console.log(weekDay);
+// let weekDay = new Date().getDay();
+// switch (weekDay) {
+//   case 0:
+//     weekDay = 'Sekmadienis';
+//     break;
+//   case 1:
+//     weekDay = 'Pirmadienis';
+//     break;
+//   case 2:
+//     weekDay = 'Antradienis';
+//     break;
+//   case 3:
+//     weekDay = 'Trečiadienis';
+//     break;
+//   case 4:
+//     weekDay = 'Ketvirtadienis';
+//     break;
+//   case 5:
+//     weekDay = 'Penktadienis';
+//     break;
+//   case 6:
+//     weekDay = 'Šeštadienis';
+//     break;
+// }
+// console.log(weekDay);
+
+
+
