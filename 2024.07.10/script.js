@@ -57,21 +57,38 @@
 
 
 
-const arr = [1, 2, 3, 4, 3, 5];
-const element = 3;
+// const arr = [1, 2, 3, 4, 3, 5];
+// const element = 3;
 
-function hasDuplicates(arr) {
-    const counts = {};
+// function hasDuplicates(arr) {
+//     const counts = {};
     
-    for (let i = 0; i < arr.length; i++) {
-        const item = arr[i];
-        if (counts[item]) {
-            return true; // Found a duplicate
-        }
-        counts[item] = 1;
+//     for (let i = 0; i < arr.length; i++) {
+//         const item = arr[i];
+//         if (counts[item]) {
+//             return true; 
+//         }
+//         counts[item] = 1;
+//     }
+    
+//     return false; 
+// }
+
+// console.log(hasDuplicates(arr)); 
+
+
+
+const arr = [1, 2, 3, 4, 5]
+
+
+const transformed = []
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+        transformed.push(arr[i] / 2)
+    } else {
+        transformed.push(arr[i] * 3)
     }
-    
-    return false; // No duplicates found
 }
 
-console.log(hasDuplicates(arr)); // Should print true
+console.log(transformed);
