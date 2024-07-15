@@ -78,17 +78,59 @@
 
 
 
-const arr = [1, 2, 3, 4, 5]
+// const arr = [1, 2, 3, 4, 5]
 
 
-const transformed = []
+// const transformed = []
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-        transformed.push(arr[i] / 2)
-    } else {
-        transformed.push(arr[i] * 3)
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//         transformed.push(arr[i] / 2)
+//     } else {
+//         transformed.push(arr[i] * 3)
+//     }
+// }
+
+// console.log(transformed);
+
+
+
+
+// let arr = 1
+
+// for (let i = 1; i < 6; i++){
+//     console.log(i)
+// }
+
+
+// let i = 1;
+// let sum = 0;
+// while (i <= 5) {
+//     sum += i;
+//     i++;
+// }
+
+// console.log(sum);
+
+
+// for (let i = 2; i <= 10; i += 2) {
+//     console.log(i)
+// }
+
+
+// for (let i = 10; i >= 1; i--) {
+//     console.log(i);
+// }
+
+
+let count = 0;
+let i = 1;
+while (i <= 20) {
+    if(i%3 === 0) {
+        count++;
     }
+
+    i++;
 }
 
-console.log(transformed);
+console.log(count);
