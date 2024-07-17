@@ -173,53 +173,200 @@
 
 
 
-function vardas(name) {
-    alert(name)
-}
+// function vardas(name) {
+//     alert(name)
+// }
 
-alert('Diana')
-
-
-function generateRandomNumber() {
-    return Math.floor(Math.random() * 5) + 1;
-  }
-  generateRandomNumber();
+// alert('Diana')
 
 
-
-  function getNameAndSurnameLength(name, surname) {
-    return name.length + surname.length;
-  }
-  getNameAndSurnameLength('John', 'Snow');
-
-
-  function getLetterByIndex(index) {
-    const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-    return alphabet[index];
-  }
-  getLetterByIndex(0);
+// function generateRandomNumber() {
+//     return Math.floor(Math.random() * 5) + 1;
+//   }
+//   generateRandomNumber();
 
 
-  function calculate(n1, n2, operator) {
-    switch(operator){
-      case 'sum':
-        return n1 + n2;
-      case 'sub':
-        return n1 - n2;
-      case 'div':
-        return n1 / n2;
-      case 'multi':
-        return n1 * n2;
-    }
-  }
-  calculate(1, 2, 'sum');
 
-  function generateRandomNumber() {
-    return Math.floor(Math.random() * 10 + 1);
-  }
+//   function getNameAndSurnameLength(name, surname) {
+//     return name.length + surname.length;
+//   }
+//   getNameAndSurnameLength('John', 'Snow');
+
+
+//   function getLetterByIndex(index) {
+//     const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+//     return alphabet[index];
+//   }
+//   getLetterByIndex(0);
+
+
+//   function calculate(n1, n2, operator) {
+//     switch(operator){
+//       case 'sum':
+//         return n1 + n2;
+//       case 'sub':
+//         return n1 - n2;
+//       case 'div':
+//         return n1 / n2;
+//       case 'multi':
+//         return n1 * n2;
+//     }
+//   }
+//   calculate(1, 2, 'sum');
+
+//   function generateRandomNumber() {
+//     return Math.floor(Math.random() * 10 + 1);
+//   }
   
-  function squareNumber(number) {
-    return Math.pow(number, 2);
-  }
+//   function squareNumber(number) {
+//     return Math.pow(number, 2);
+//   }
   
-  squareNum(generateRandomNumber());
+//   squareNum(generateRandomNumber());
+
+
+
+
+// const convertMStoKMH = (speedMS) => speedMS * 3.6;
+
+
+// console.log(convertMStoKMH(10)); // 36
+
+
+// console.log(compareNumber(4, 7)); // 7
+// console.log(compareNumber(5, 5)); // "equal"
+// console.log(compareNumber("5", 5)); // "Error: most arguments must be numbers"
+
+
+
+
+
+// if (4 < 7) {
+//   console.log(7)
+// } else if (5 === 5) {
+//   console.log('equal')
+// } else 
+
+
+// const compareNumber = (a, b) => {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//       return "Error: most arguments must be numbers";
+//   }
+//     if (a === b) {
+//       return 'equal';
+//     }
+//     return a > b ? a : b;
+//   };
+
+///// numeriu palyginimas
+//   const compareNumber = (a, b) => {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         return "Error: most arguments must be numbers";
+//     }
+//     if (a === b) {
+//         return "equal";
+//     }
+//     return a > b ? a : b;
+   
+
+// };
+
+// console.log(compareNumber(4, 7));
+// console.log(compareNumber(5, 5)); 
+// console.log(compareNumber("5", 5)); 
+
+///// kelemieji metai
+
+const isLeapYear = (year) => (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+
+console.log(isLeapYear(2020));
+console.log(isLeapYear(2021)); 
+
+///didziausias masyvo elementas
+
+const findMaxInArray = (arr) => {
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+          max = arr[i];
+      }
+  }
+  return max;
+};
+
+console.log(findMaxInArray([1, 3, 2, 5, 4]));
+console.log(findMaxInArray([-1, -3, -2, -5, -4]));
+
+//// masyvo elementu suma
+
+const sumArray = (arr) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+  }
+  return sum;
+};
+
+console.log(sumArray([1, 2, 3, 4, 5])); // 15
+
+
+///ar masyvai yra lygus
+
+const areArraysEqual = (arr1, arr2) => {
+  if (arr1.length !== arr2.length) return false;
+  for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) {
+          return false;
+      }
+  }
+  return true;
+};
+
+console.log(areArraysEqual([1, 2, 3], [1, 2, 3])); // true
+console.log(areArraysEqual([1, 2, 3], [1, 2, 4])); // false
+
+
+
+////eilutes apvertimas
+
+const reverseString = (str) => {
+  let reversed = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+      reversed += str[i];
+  }
+  return reversed;
+};
+
+console.log(reverseString("Labas")); // "sabaL"
+
+/// ar zodis yra palindromas
+
+const isPalindrome = (word) => {
+  for (let i = 0; i < word.length / 2; i++) {
+      if (word[i] !== word[word.length - 1 - i]) {
+          return false;
+      }
+  }
+  return true;
+};
+
+console.log(isPalindrome("savas")); // true
+console.log(isPalindrome("svetimas")); // false
+
+//skaiciu piramide
+
+
+
+const printPyramid = (height) => {
+  for (let i = 1; i <= height; i++) {
+      let line = '';
+      for (let j = 0; j < i; j++) {
+          line += i;
+      }
+      console.log(line);
+  }
+};
+
+1
+22
+333
