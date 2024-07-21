@@ -238,14 +238,14 @@
 // console.log(compareNumber("5", 5)); // "Error: most arguments must be numbers"
 
 
-
-
-
 // if (4 < 7) {
 //   console.log(7)
 // } else if (5 === 5) {
-//   console.log('equal')
-// } else 
+//   console.log('Equal')
+// } else {
+
+// }
+
 
 
 // const compareNumber = (a, b) => {
@@ -370,3 +370,84 @@ const printPyramid = (height) => {
 1
 22
 333
+
+
+
+
+const convertToUpperCase = (text) => text.toUpperCase();
+
+
+const extractSubstring = (text) => text.substring(2, 7);
+
+
+console.log(capitalizeFirstLetter("labas rytas, pasauli!")); // "Labas Rytas, Pasauli!"
+
+
+const capitalizeFirstLetter = (text) => {
+  const words = text.split(' ');
+  let result = '';
+
+  for (let i = 0; i < words.length; i++) {
+      const word = words[i];
+      if (word) {
+          result += word.charAt(0).toUpperCase() + word.slice(1);
+      }
+      if (i < words.length - 1) {
+          result += ' ';
+      }
+  }
+
+  return result;
+};
+
+
+
+console.log(censorCurseWords("This is a badword and another badword.", ["badword"])); // "This is a **** and another ****."
+
+
+
+const censorCurseWords = (text, curseWords) => {
+  let censoredText = text;
+  for (let i = 0; i < curseWords.length; i++) {
+      const curseWord = curseWords[i];
+      while (censoredText.includes(curseWord)) {
+          censoredText = censoredText.replace(curseWord, '****');
+      }
+  }
+  return censoredText;
+};
+
+
+const milkPrice = 3.49; // Vėliau pakeisti kainą į 3
+
+if (Number.isInteger(milkPrice)) {
+  alert("Centų nereikia")
+} else{
+  alert("Centų prireiks...")
+}
+
+
+
+const milkPrice = 3.677; // Vėliau pakeisti kainą į 3
+
+if (Number.isInteger(milkPrice)) {
+  alert("Centų nereikia")
+} else{
+  alert("Centų prireiks...")
+}
+
+alert(milkPrice.toFixed(2))
+
+
+const findMax = (...numbers) => Math.max(...numbers);
+
+const isLegalAge = true;
+
+console.log(isLegalAge); // Atvaizduos kaip boolean
+console.log(isLegalAge.toString()); // Atvaizduos kaip string
+
+
+const isLegalAge = true;
+
+console.log(isLegalAge); // Atvaizduos kaip boolean
+console.log(isLegalAge.toString()); // Atvaizduos kaip string
