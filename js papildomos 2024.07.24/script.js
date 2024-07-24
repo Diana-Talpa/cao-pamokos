@@ -211,6 +211,285 @@ if (data === 'start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51,
 
 
 
+// Step 1: Define the original array
+
+// Step 2: Use the slice method to extract the first element
+// Note: Slice syntax is array.slice(start, end), for the first element use array.slice(0, 1)
+let slicedElement = data.slice(0, 1);
+
+// Step 3: Save the sliced element in a new array
+let newArray = slicedElement;
+
+// Output the new array to verify
+console.log('task31')
+console.log("New array:", newArray);
+
+
+
+
+
+
+
+
+
+
+let slicedElement2 = data.slice(26, );
+
+
+let newArray2 = slicedElement2;
+
+console.log('task32')
+console.log("New array:", newArray2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let slicedElement3 = data.slice(1, 2);
+
+
+let newArray3 = slicedElement3;
+
+console.log('task33')
+console.log("New array:", newArray3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+let slicedElement4 = data.slice(25, 26);
+
+
+let newArray4 = slicedElement4;
+
+console.log('task34')
+console.log("New array:", newArray4);
+
+
+
+
+
+
+
+
+
+
+let slicedElement5 = data.slice(7, 8);
+
+
+let newArray5 = slicedElement5;
+
+console.log('task35')
+console.log("New array:", newArray5);
+
+
+
+
+
+
+
+
+
+let slicedElement6 = data.slice(-9, -8);
+
+
+let newArray6 = slicedElement6;
+
+console.log('task36')
+console.log("New array:", newArray6);
+
+
+
+
+
+
+
+let slicedElement7 = data.slice(12, 13);
+
+
+let newArray7 = slicedElement7;
+
+console.log('task37')
+console.log("New array:", newArray7);
+
+
+
+
+
+
+
+
+
+let slicedElement8 = data.slice(0, 3);
+
+
+let newArray8 = slicedElement8;
+
+console.log('task38')
+console.log("New array:", newArray8);
+
+
+
+
+
+
+
+
+
+
+let slicedElement9 = data.slice(-3);
+
+
+let newArray9 = slicedElement9;
+
+console.log('task39')
+console.log("New array:", newArray9);
+
+
+
+
+
+let slicedElement10 = data.slice(0, 10);
+
+
+let newArray10 = slicedElement10;
+
+console.log('task310')
+console.log("New array:", newArray10);
+
+
+
+
+
+
+
+
+let slicedElement11 = data.slice(-10, );
+
+
+let newArray11 = slicedElement11;
+
+console.log('task311')
+console.log("New array:", newArray11);
+
+
+
+
+
+
+
+
+
+let slicedElement12 = data.slice(2, 8);
+
+
+let newArray12 = slicedElement12;
+
+console.log('task312')
+console.log("New array:", newArray12);
+
+
+
+
+
+
+
+let slicedElement13 = data.slice(0, 3);
+
+
+let newArray13 = slicedElement13;
+
+console.log('task313')
+console.log("New array:", newArray13);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
