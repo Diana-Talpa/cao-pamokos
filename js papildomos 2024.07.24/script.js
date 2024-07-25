@@ -1715,15 +1715,40 @@ console.log(filteredStrings13);
 
 
 
+console.log(data)
+
+
+
+// Using a for loop
+let numbersForLoop = [];
+for (let i = 0; i < data.length; i++) {
+    if (typeof data[i] === 'number') {
+        numbersForLoop.push(data[i]);
+    }
+}
 
 
 
 
+// Using map method with filter
+let numbersMap = data.filter(item => typeof item === 'number').map(item => item);
+
+// Print results
+console.log("Using for loop:", numbersForLoop);
+console.log("Using map method:", numbersMap);
 
 
 
+// Using forEach
+let numbersForEach = [];
+data.forEach(item => {
+    if (typeof item === 'number') {
+        numbersForEach.push(item);
+    }
+});
 
 
+console.log("Using forEach:", numbersForEach);
 
 
 
