@@ -1755,7 +1755,26 @@ console.log("Using forEach:", numbersForEach);
 
 
 
+let numbersForLoop2 = []
+for (let i = 0; i < data.lenght; i++) {
+  if (typeof data[i] === 'string') {
+    numbersForLoop2.push(data[i])
+  }
+}
+console.log(numbersForLoop2)
+
+
+let numbersMap1 = data.filter(item => typeof item === 'string').map(item => item);
+
+console.log(numbersMap1)
 
 
 
+let numbersForEach1 = [];
+data.forEach(item => {
+    if (typeof item === 'string') {
+        numbersForEach1.push(item);
+    }
+});
 
+console.log(numbersForEach1)
