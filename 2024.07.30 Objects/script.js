@@ -19,11 +19,11 @@ company1.contacts.adress.street = 'Laisvės pr.'
 company1.contacts.adress.apartament = 37
 
 
-company1.adressStr = function() {
-    let adress = 'Vilniaus st. 15, Vilnius, Lithuania.'
+// company1.adressStr = function() {
+//     let {street, apartament, city, country} = this.contacts.adress
 
-    return adress
-}
+//     return '${street}.'
+// }
 
 company1.changeNvoTrue = function() {
    this.nvo = true
@@ -45,6 +45,7 @@ company1.changeStatusNvo = function() {
     return this.nvo
 }
 
+//salis kur dirba i viena stringa
 
 company1.onePliusCountry = function(papildomaSalis) {
     this.workingLocations.push(papildomaSalis)
