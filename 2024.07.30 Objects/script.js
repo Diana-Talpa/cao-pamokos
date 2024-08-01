@@ -25,6 +25,19 @@ company1.contacts.adress.apartament = 37
 //     return '${street}.'
 // }
 
+
+
+
+company1.getInfo = function(){
+    let { street, apartment, city, country } = this.contacts.address
+    return `${street} ${apartment}, ${city}, ${country}!`
+}
+
+
+
+console.log(company1.getInfo())
+
+
 company1.changeNvoTrue = function() {
    this.nvo = true
    return this.nvo
@@ -46,6 +59,15 @@ company1.changeStatusNvo = function() {
 }
 
 //salis kur dirba i viena stringa
+
+
+
+company1.getActivityAreas = function() {
+    let areaStr = this.activityAreas.join(', ')
+    return `Company's activity areas are: ${areaStr}.`
+}
+
+console.log(company1.getActivityAreas)
 
 company1.onePliusCountry = function(papildomaSalis) {
     this.workingLocations.push(papildomaSalis)
