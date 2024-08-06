@@ -57,15 +57,123 @@
 
 //     h5Element.after(paragraph)
 // }
-const bodyElement = document.querySelector('body')
+// const bodyElement = document.querySelector('body')
 
-const alertNameClick = document.createElement('button')
-bodyElement.append(alertNameClick)
+// const alertNameClick = document.createElement('button')
+// bodyElement.append(alertNameClick)
 
 
-alertNameClick.addEventListener('click', function() {
-    alert('Diana')
+// alertNameClick.addEventListener('click', function() {
+//     alert('Diana')
+//     const pElement = document.createElement('p')
+//     pElement.textContent = 'As mokausi javascripto'
+//     alertNameClick.after(pElement)
     
-})
+// })
 
-alertNameClick()
+// const plusOne = document.createElement('h1')
+// plusOne.textContent = 5
+// bodyElement.append(plusOne)
+
+// const plusOneButton = document.createElement('button')
+// plusOneButton.textContent = '+1'
+// bodyElement.append(plusOneButton)
+
+
+// plusOneButton.addEventListener('click',  () => {
+//     let counter = 5
+//     counter++
+//     document.querySelector('h1').innerText = counter
+// // })
+
+// let counter = 5;
+
+// document.querySelector('button').addEventListener('click', () => {
+//   counter++;
+//   document.querySelector('h1').innerText = counter;
+// });
+
+
+
+// let alertNoCopy = document.querySelector('p')
+// alertNoCopy.addEventListener('copy', function() {
+//     alert('Kopijuoti negalima')
+    
+// })
+
+// function getRandomInt(max) {
+//     return Math.floor(Math.random() * max);
+//   }
+  
+
+// const randomElement = document.querySelector('randomas.button')
+
+// const h2Element = document.querySelector('h2')
+
+// randomElement.addEventListener('click', function () {
+    
+//     let randomnr= getRandomInt(100)
+//     h2Element.innerText = randomnr
+
+// })
+
+// function generateRandomNumber() {
+//   return Math.floor(Math.random() * 100) + 1;
+// }
+
+// document.querySelector('button').addEventListener('click', () => {
+//   const randomNumber = generateRandomNumber();
+//   document.querySelector('h1').innerText = randomNumber;
+// });
+
+
+
+// document.getElementById('suauges').addEventListener('click', () => {
+//     document.querySelector('h1').innerText = 'Alus'
+// })
+
+// document.getElementById('vaikas').addEventListener('click', () => {
+//     alert('nepilnametis nieko neturime')
+// })
+
+
+// function getRandomInt() {
+//     return Math.floor(Math.random() * 3 ) + 1;
+//   }
+
+//  console.log(getRandomInt()) 
+  
+// const maybeWorks = document
+
+
+// function generateRandomNumber() {
+//     return Math.floor(Math.random() * 3) + 1
+// }
+
+// const randomNumber = generateRandomNumber()
+// console.log(randomNumber)
+
+// document.getElementById('one').addEventListener('click', () => randomNumber === 1 ? alert('Yay') : alert ('Nope :('))
+
+// document.getElementById('two').addEventListener('click', () => randomNumber === 2 ? alert('Yay') : alert ('Nope :('))
+
+
+// document.getElementById('three').addEventListener('click', () => randomNumber === 3 ? alert('Yay') : alert ('Nope :('))
+
+// function atertNeklausai() {
+//     alert('Neklausai manes')
+// }
+
+// const paspaudei = atertNeklausai
+// document.getElementById('pirmas').addEventListener('click', () => atertNeklausai)
+
+
+// document.body.addEventListener('click', () => {
+//     const isButton = event.target.nodeName === 'BUTTON';
+//     if (isButton) {
+//       document.getElementById('output').innerText = 'Neklausote manęs';
+//     }
+//   });
+
+
+document.body.addEventListener('mousemove', () => document.getElementById('output').innerText = 'Kiek galima neklausyti?!');
