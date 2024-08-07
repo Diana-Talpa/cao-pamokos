@@ -50,8 +50,7 @@ function changeColor() {
 
 function updateButtonStates() {
     let currentNumber = parseInt(displey.textContent);
-
-    // Disable buttons based on the current number
+   
     minusButton.disabled = currentNumber <= 0;
     plusButton.disabled = currentNumber >= 10;
 
@@ -61,13 +60,6 @@ function updateButtonStates() {
     minusButton3.disabled = currentNumber <= 4;
     plusButton3.disabled = currentNumber >= 6; 
 
-    console.log(`Number: ${currentNumber}`);
-    console.log(`minusButton: ${minusButton.disabled}`);
-    console.log(`plusButton: ${plusButton.disabled}`);
-    console.log(`minusButton2: ${minusButton2.disabled}`);
-    console.log(`plusButton2: ${plusButton2.disabled}`);
-    console.log(`minusButton3: ${minusButton3.disabled}`);
-    console.log(`plusButton3: ${plusButton3.disabled}`);
 }
 
 function updateAll() {
