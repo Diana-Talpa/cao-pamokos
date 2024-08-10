@@ -1,7 +1,7 @@
 const numbersElement = document.querySelector('#numbers');
 
 const displey = document.createElement('h3');
-displey.textContent = 5;
+displey.textContent = '5';
 numbersElement.append(displey);
 
 const minusButton = document.createElement('button');
@@ -72,6 +72,11 @@ resetAll.addEventListener('click', () => {
     updateAll();
 });
 
+//geriau naudot rebume atribute kad nebebutu disabled kai paspaudi reseta
+
+
+//padaryti be parse
+
 minusButton.addEventListener('click', () => {
     let currentNumber = parseInt(displey.textContent);
     if (currentNumber > 0) {
@@ -119,5 +124,8 @@ plusButton3.addEventListener('click', () => {
         updateAll();
     }
 });
+
+
+
 
 
