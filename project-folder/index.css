@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(#5757ff,#00009b);
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+    color: #a8a8fd;
+}
+ul{
+    color: rgb(104, 255, 255);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+a:hover{
+    color: rgb(152, 254, 0);
+}

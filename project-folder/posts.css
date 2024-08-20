@@ -1,0 +1,36 @@
+h1{
+    font-size: 70px;
+    color: #09095d;
+    text-align: center;
+}
+ul {
+    color: rgb(239, 69, 69);
+    list-style: circle;
+}
+
+
+
+body{
+    
+    background: linear-gradient(#3d85c5,#9fc5e9);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+
+}
+a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 255, 200);
+    text-transform: capitalize;
+}
+
+a:first-of-type {
+    color: rgb(180, 242, 255);
+    font-size: 20px;
+}
+
+a:hover{
+    color: greenyellow;
+}
+

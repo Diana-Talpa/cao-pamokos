@@ -1,0 +1,41 @@
+h1{
+    font-weight: 700;
+    font-size: 70px;
+    color: #a1a1ff;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    
+    justify-content: center;
+    gap: 30px;
+
+}
+
+li{
+    padding-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(44, 136, 136);
+    font-size: 30px;
+    margin-right: 25px;
+}
+
+a:active{
+    color: blue;
+}
+a:hover{
+    color: chartreuse;
+}
+
+body{
+    background: linear-gradient(#92E8F1, #0F9EA5 );
+    background-repeat: no-repeat;
+    background-position: center;
+    position: cover;
+    height: 900px;
+}
