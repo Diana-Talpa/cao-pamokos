@@ -1,10 +1,16 @@
-function loadScript(src) {
-    const script = document.createElement('script')
-    script.src = src;
-    document.head.prepend(script);
-}
-loadScript('navigation.js')
+import navigation from './navigation.js'
 
+function init () {
+
+    fetchUsersAndPosts()
+
+    const contentElement = document.getElementById('content')
+    const navigationElement = navigation()
+    contentElement.append(navigationElement)
+
+}
+
+init()
 function fetchUsersAndPosts() {
    
     Promise.all([
@@ -12,14 +18,14 @@ function fetchUsersAndPosts() {
         fetch('https://jsonplaceholder.typicode.com/posts').then(response => response.json())
     ])
     .then(([users, posts]) => {
-        
+        const postContainer = document.createElement('div')
         const heading = document.createElement('h1');
         heading.textContent = 'User List with Post Counts';
-        document.body.appendChild(heading);
+        postContainer.appendChild(heading);
 
         
         const userList = document.createElement('ul');
-
+        postContainer.append(userList)
        
         const postCounts = {};
         posts.forEach(post => {
@@ -47,10 +53,7 @@ function fetchUsersAndPosts() {
         });
 
         
-        document.body.appendChild(userList);
-    })
+        document.body.append(postContainer)
+     })
     .catch(error => console.error('Error fetching users or posts:', error));
 }
-
-
-window.onload = fetchUsersAndPosts;

@@ -1,11 +1,13 @@
-function createNavMenu() {
+export default function createNavMenu() {
     
     const ul = document.createElement('ul');
 
     const menuItems = [
       { text: 'Posts', href: './posts.html' },
       { text: 'Users', href: './index.html' },
-      { text: 'Albums', href: './albums.html' }
+      { text: 'Albums', href: './albums.html' },
+      { text: 'Home', href: './users.html' }
+
     ];
 
     
@@ -20,8 +22,7 @@ function createNavMenu() {
      
       ul.appendChild(li);
     });
-   
-    document.body.appendChild(ul);
+   return ul
   }
 
-  createNavMenu();
+  

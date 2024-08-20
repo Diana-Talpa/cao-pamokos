@@ -1,14 +1,17 @@
-function loadScript(src) {
-  const script = document.createElement('script')
-  script.src = src;
-  document.head.prepend(script);
+import navigation from './navigation.js'
+
+async function init() {
+
+  const pageContent = document.getElementById('postsContainer');
+  const headerElement = navigation()
+  const postsContainer = await fetchPostsAndComments()
+  pageContent.append(headerElement, postsContainer)
+ 
+  
+  
+
 }
-loadScript('navigation.js')
-
-
-
-
-
+init()
 
 
 
@@ -27,7 +30,8 @@ async function fetchPostsAndComments() {
       const comments = await commentsResponse.json();
 
      
-      const postsContainer = document.getElementById('postsContainer');
+      const postsContainer = document.createElement('div')
+      postsContainer.classList.add('post-container')
 
       
       posts.forEach(post => {
@@ -55,11 +59,10 @@ async function fetchPostsAndComments() {
 
         
         postsContainer.appendChild(postElement);
+        
       });
+      return postsContainer
     } catch (error) {
       console.error('Error fetching posts or comments:', error);
     }
   }
-
-  
-  fetchPostsAndComments();
