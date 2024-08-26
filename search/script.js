@@ -29,7 +29,7 @@ async function searchData() {
                     <h2>${item.name}</h2>
                     <p>Email: ${item.email}</p>
                     <p>Phone: ${item.phone}</p>
-                    <p>Website: ${item.website}</p>
+                    <p>Website: <a href="http://${item.website}" target="_blank">${item.website}</a></p>
                 `;
             } else if (searchInput === 'posts' || searchInput === 'comments' || searchInput === 'albums') {
                 resultItem.innerHTML = `
@@ -43,7 +43,7 @@ async function searchData() {
                 `;
             }
             
-            resultsDiv.appendChild(resultItem);
+            resultsDiv.append(resultItem);
         });
 
     } catch (error) {
