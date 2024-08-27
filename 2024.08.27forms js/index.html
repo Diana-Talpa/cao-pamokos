@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+<form action="" id="test-form"> 
+
+
+    <div class="form-control">
+        <label for="person-name">Name:</label>
+        <input type="text" id="person-name" name="name" minlength="2" value="John" required>
+    </div>     
+    <div class="form-control">
+        <label for="person-surname">Surname:</label>
+        <input type="text" id="person-surname" name="surname" minlength="2" value="Doe" required>
+
+    </div>       
+    <div class="form-control">
+        <label for="person-age">Age:</label>
+        <input type="number" id="person-age" name="age" min="1" max="100" value="25" required>
+
+    </div>      
+    <div class="form-control">
+        <label for="person-phone">Phone:</label>
+        <input type="number" id="person-phone" name="phone" minlength="8" value="37067829548">
+    </div>     
+    <div class="form-control">
+        <label for="person-email">Email:</label>
+        <input type="text" id="person-email" name="email"  value="email@email.com" required>
+    </div>     
+    <div class="form-control">
+        <label for="it-knowledge">IT Knowledge:</label>
+        <input type="range" id="it-knowledge" name="knowledge" min="1" max="10" value="8">
+    </div>
+    <fieldset>
+        <legend>Group:</legend>   
+        <div>
+          <input type="radio" id="person-group1" name="group" value="feu10gr" checked />
+          <label for="person-group1">FEU 10gr.</label>
+        </div>   
+        <div>
+          <input type="radio" id="person-group2" name="group" value="feu11gr" />
+          <label for="person-group2">FEU 11gr.</label>
+        </div>   
+        <div>
+          <input type="radio" id="person-group3" name="group" value="feu12gr" />
+          <label for="person-group3">FEU 12gr.</label>
+        </div>
+        <div>
+            <input type="radio" id="person-group4" name="group" value="feu13gr" />
+            <label for="person-group4">FEU 13gr.</label>
+          </div>
+          <div>
+            <input type="radio" id="person-group5" name="group" value="feu14gr" />
+            <label for="person-group5">FEU 14gr.</label>
+          </div>
+          <div>
+            <input type="radio" id="person-group6" name="group" value="feu15gr" />
+            <label for="person-group6">FEU 15gr.</label>
+          </div>
+          <div>
+            <input type="radio" id="person-group7" name="group" value="feu16gr" />
+            <label for="person-group7">FEU 16gr.</label>
+          </div>
+          <div>
+            <input type="radio" id="person-group8" name="group" value="feu17gr" />
+            <label for="person-group8">FEU 17gr.</label>
+          </div>
+          <div>
+            <input type="radio" id="person-group9" name="group" value="feu18gr" />
+            <label for="person-group9">FEU 18gr.</label>
+          </div>
+          <div>
+            <input type="radio" id="person-group10" name="group" value="feu19gr" />
+            <label for="person-group10">FEU 19gr.</label>
+          </div>
+          <div>
+            <input type="radio" id="person-group11" name="group" value="feu20gr" />
+            <label for="person-group11">FEU 20gr.</label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>Interests:</legend>
+        <div>
+          <input type="checkbox" id="java-script" name="interests" checked value="javascript"/>
+          <label for="java-script">JavaScript</label>
+        </div>
+        <div>
+          <input type="checkbox" id="react" name="interests" value="react"/>
+          <label for="react">React</label>
+        </div>  
+        <div>
+            <input type="checkbox" id="html" name="interests" value="html" />
+            <label for="html">HTML</label>
+          </div>    
+        <div>
+            <input type="checkbox" id="css" name="interests" value="css" />
+            <label for="css">CSS</label>
+          </div>   
+      </fieldset>
+      <button id="submit-button" type="submit">Submit</button>
+
+    </form>
+      <div id="students-list"></div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
