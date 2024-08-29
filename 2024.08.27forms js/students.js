@@ -66,6 +66,183 @@
 
 
 
+// const studentForm = document.querySelector('#student-form');
+// const studentsList = document.querySelector('#students-list');
+// const messageContainer = document.createElement('span');
+// messageContainer.id = 'form-message';
+// studentForm.after(messageContainer);
+
+// function itKnowledgeInputHandler() {
+//     const input = studentForm.querySelector('#it-knowledge');
+//     const output = studentForm.querySelector('#it-knowledge-output');
+
+//     output.value = input.value;
+
+//     input.addEventListener('input', () => {
+//         output.value = input.value;
+//     });
+// }
+
+// itKnowledgeInputHandler();
+
+// studentForm.addEventListener('submit', event => {
+//     event.preventDefault();
+
+//     const form = event.target;
+
+//     const nameInput = form.name;
+//     const surnameInput = form.surname;
+//     const ageInput = form.age;
+//     const phoneInput = form.phone;
+//     const emailInput = form.email;
+
+//     const name = nameInput.value.trim();
+//     const surname = surnameInput.value.trim();
+//     const age = ageInput.value.trim();
+//     const phone = phoneInput.value.trim();
+//     const email = emailInput.value.trim();
+
+//     let isValid = true; 
+   
+//     function clearErrorStyles(input) {
+//         input.style.border = ''; 
+//         const errorMessage = input.nextElementSibling;
+//         if (errorMessage && errorMessage.classList.contains('error-message')) {
+//             errorMessage.remove(); 
+//         }
+//     }
+
+//     clearErrorStyles(nameInput);
+//     clearErrorStyles(surnameInput);
+//     clearErrorStyles(ageInput);
+//     clearErrorStyles(phoneInput);
+//     clearErrorStyles(emailInput);
+ 
+//     function showError(input, message) {
+//         input.style.border = '1px solid red'; 
+    
+//         const errorMessage = document.createElement('span');
+//         errorMessage.classList.add('error-message');
+        
+//         errorMessage.textContent = message;
+        
+        
+//         if (!input.nextElementSibling || !input.nextElementSibling.classList.contains('error-message')) {
+//             input.after(errorMessage);
+//         }
+//     }
+
+//     if (!name) {
+//         showError(nameInput, 'This input is required!');
+//         isValid = false;
+//     }
+
+//     if (!surname) {
+//         showError(surnameInput, 'This input is required!');
+//         isValid = false;
+//     }
+
+//     if (!age) {
+//         showError(ageInput, 'This input is required!');
+//         isValid = false;
+//     }
+
+//     if (!phone) {
+//         showError(phoneInput, 'This input is required!');
+//         isValid = false;
+//     }
+
+//     if (!email) {
+//         showError(emailInput, 'This input is required!');
+//         isValid = false;
+//     }
+
+//     if (!isValid) {
+//         messageContainer.textContent = 'Not all information given';
+//         messageContainer.classList.add('message-container')   
+//         return; 
+//     }
+
+//     const itKnowledgeInput = form['it-knowledge'];
+//     const groupInput = form.group;
+//     const interestInputs = form.querySelectorAll('[name="interest"]:checked');
+
+//     const itKnowledge = itKnowledgeInput.value;
+//     const group = groupInput.value;
+
+//     const interests = [...interestInputs].map(input => input.value);
+
+//     const studentItem = document.createElement('div');
+//     studentItem.classList.add('student-item');
+
+//     const nameElement = document.createElement('h2');
+//     nameElement.textContent = `${name} ${surname}`;
+
+//     const ageElement = document.createElement('p');
+//     ageElement.textContent = `Age: ${age}`;
+
+//     const phoneElement = document.createElement('p');
+//     phoneElement.textContent = `Phone: ****`;
+
+//     const emailElement = document.createElement('p');
+//     emailElement.textContent = `Email: ****`;
+
+//     const itKnowledgeElement = document.createElement('p');
+//     itKnowledgeElement.textContent = `IT Knowledge: ${itKnowledge}`;
+
+//     const groupElement = document.createElement('p');
+//     groupElement.textContent = `Group: ${group}`;
+
+//     const interestsElement = document.createElement('p');
+//     interestsElement.textContent = `Interests: ${interests.join(', ')}`;
+
+//     const privateInfoButton = document.createElement('button');
+//     privateInfoButton.textContent = 'Show private info';
+
+//     const deleteButton = document.createElement('button');
+//     deleteButton.textContent = 'Delete';
+
+//     let isPrivateInfoVisible = false;
+//     privateInfoButton.addEventListener('click', () => {
+//         if (isPrivateInfoVisible) {
+//             phoneElement.textContent = `Phone: ****`;
+//             emailElement.textContent = `Email: ****`;
+//             privateInfoButton.textContent = 'Show private info';
+//         } else {
+//             phoneElement.textContent = `Phone: ${phone}`;
+//             emailElement.textContent = `Email: ${email}`;
+//             privateInfoButton.textContent = 'Hide private info';
+//         }
+//         isPrivateInfoVisible = !isPrivateInfoVisible;
+//     });
+
+//     deleteButton.addEventListener('click', () => {
+//         studentItem.remove();
+
+//         messageContainer.textContent = `Student (${name} ${surname}) was successfully deleted`;
+        
+//         setTimeout(() => {
+//             messageContainer.textContent = '';
+//         }, 5000);
+//     });
+
+//     studentItem.append(nameElement, ageElement, phoneElement, emailElement, itKnowledgeElement, groupElement, interestsElement, privateInfoButton, deleteButton);
+//     studentsList.prepend(studentItem);
+
+//     form.reset();
+//     itKnowledgeInputHandler();
+
+//     const alertMessage = document.querySelector('#alert-message');
+//     alertMessage.classList.add('created');
+//     alertMessage.textContent = `Student (${name} ${surname}) was successfully created!`;
+
+//     setTimeout(() => {
+//         alertMessage.textContent = '';
+//     }, 5000);
+
+//     messageContainer.textContent = '';
+// });
+
 const studentForm = document.querySelector('#student-form');
 const studentsList = document.querySelector('#students-list');
 const messageContainer = document.createElement('span');
@@ -90,86 +267,58 @@ studentForm.addEventListener('submit', event => {
 
     const form = event.target;
 
+    
     const nameInput = form.name;
     const surnameInput = form.surname;
     const ageInput = form.age;
     const phoneInput = form.phone;
     const emailInput = form.email;
 
+    
+    const inputs = [
+        { input: nameInput },
+        { input: surnameInput },
+        { input: ageInput },
+        { input: phoneInput },
+        { input: emailInput }
+    ];
+
+    let isValid = true;
+
+    
+    clearErrorStyles(inputs.map(({ input }) => input));
+    messageContainer.textContent = '';
+
+    
+    inputs.forEach(({ input }) => {
+        const value = input.value.trim();
+        if (!value) {
+            showError(input);
+            isValid = false;
+        }
+    });
+
+    
+    if (!isValid) {
+        messageContainer.textContent = 'Some inputs are invalid!';
+        messageContainer.classList.add('message-container');
+        return;
+    }
+
+    localStorage.clear();
+
+    
+    const itKnowledgeInput = form['it-knowledge'];
+    const groupInput = form.group;
+    const interestInputs = form.querySelectorAll('[name="interest"]:checked');
+
     const name = nameInput.value.trim();
     const surname = surnameInput.value.trim();
     const age = ageInput.value.trim();
     const phone = phoneInput.value.trim();
     const email = emailInput.value.trim();
-
-    let isValid = true; 
-   
-    function clearErrorStyles(input) {
-        input.style.border = ''; 
-        const errorMessage = input.nextElementSibling;
-        if (errorMessage && errorMessage.classList.contains('error-message')) {
-            errorMessage.remove(); 
-        }
-    }
-
-    clearErrorStyles(nameInput);
-    clearErrorStyles(surnameInput);
-    clearErrorStyles(ageInput);
-    clearErrorStyles(phoneInput);
-    clearErrorStyles(emailInput);
- 
-    function showError(input, message) {
-        input.style.border = '1px solid red'; 
-    
-        const errorMessage = document.createElement('span');
-        errorMessage.classList.add('error-message');
-        
-        errorMessage.textContent = message;
-        
-        
-        if (!input.nextElementSibling || !input.nextElementSibling.classList.contains('error-message')) {
-            input.after(errorMessage);
-        }
-    }
-
-    if (!name) {
-        showError(nameInput, 'This input is required!');
-        isValid = false;
-    }
-
-    if (!surname) {
-        showError(surnameInput, 'This input is required!');
-        isValid = false;
-    }
-
-    if (!age) {
-        showError(ageInput, 'This input is required!');
-        isValid = false;
-    }
-
-    if (!phone) {
-        showError(phoneInput, 'This input is required!');
-        isValid = false;
-    }
-
-    if (!email) {
-        showError(emailInput, 'This input is required!');
-        isValid = false;
-    }
-
-    if (!isValid) {
-        messageContainer.textContent = 'Not all information given';
-        messageContainer.classList.add('message-container')   
-        return; 
-    }
-
-    const itKnowledgeInput = form['it-knowledge'];
-    const groupInput = form.group;
-    const interestInputs = form.querySelectorAll('[name="interest"]:checked');
-
     const itKnowledge = itKnowledgeInput.value;
     const group = groupInput.value;
-
     const interests = [...interestInputs].map(input => input.value);
 
     const studentItem = document.createElement('div');
@@ -218,9 +367,7 @@ studentForm.addEventListener('submit', event => {
 
     deleteButton.addEventListener('click', () => {
         studentItem.remove();
-
         messageContainer.textContent = `Student (${name} ${surname}) was successfully deleted`;
-        
 
         setTimeout(() => {
             messageContainer.textContent = '';
@@ -243,3 +390,51 @@ studentForm.addEventListener('submit', event => {
 
     messageContainer.textContent = '';
 });
+
+
+function showError(input) {
+    input.style.border = '1px solid red';
+
+    
+    if (!input.nextElementSibling || !input.nextElementSibling.classList.contains('error-message')) {
+        const errorMessage = document.createElement('span');
+        errorMessage.classList.add('error-message');
+        errorMessage.textContent = 'This input is required!';
+        input.after(errorMessage);
+    }
+}
+
+function clearErrorStyles(inputElements) {
+    inputElements.forEach(input => {
+        input.style.border = '';
+
+        
+        const errorMessage = input.nextElementSibling;
+        if (errorMessage && errorMessage.classList.contains('error-message')) {
+            errorMessage.remove();
+        }
+    });
+}
+
+function saveRoLocalStorage(event) {
+    const inputName = event.target.name
+    const inputValue = event.target.value.trim()
+    localStorage.setItem(inputName, inputValue)
+}
+
+function loadFormLocalStorage() {
+    const formInputs = studentForm.querySelectorAll('input, select')
+    formInputs.forEach(input => {
+        const savedValue = localStorage.getItem(input.name)
+        if (savedValue) {
+            input.value = savedValue
+        }
+    })
+}
+
+const formInputs = studentForm.querySelectorAll('input, select')
+formInputs.forEach(input => {
+    input.addEventListener('input', saveRoLocalStorage)
+})
+
+window.addEventListener('DOMContentLoaded', loadFormLocalStorage)

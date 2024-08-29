@@ -1,0 +1,15 @@
+:root {
+    --color-danger: red;
+}
+
+.color-danger {
+    color: var(--color-danger);
+}
+
+.color-success {
+    color: green;
+}
+
+.invalid-input {
+    border-color: var(--color-danger);
+}
