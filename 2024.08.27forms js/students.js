@@ -68,7 +68,7 @@
 
 const studentForm = document.querySelector('#student-form');
 const studentsList = document.querySelector('#students-list');
-const messageContainer = document.createElement('p');
+const messageContainer = document.createElement('span');
 messageContainer.id = 'form-message';
 studentForm.after(messageContainer);
 
@@ -120,8 +120,7 @@ studentForm.addEventListener('submit', event => {
  
     function showError(input, message) {
         input.style.border = '1px solid red'; 
-
-        
+    
         const errorMessage = document.createElement('span');
         errorMessage.classList.add('error-message');
         
@@ -160,7 +159,7 @@ studentForm.addEventListener('submit', event => {
 
     if (!isValid) {
         messageContainer.textContent = 'Not all information given';
-        messageContainer.style.color = 'red';
+        messageContainer.classList.add('message-container')   
         return; 
     }
 
