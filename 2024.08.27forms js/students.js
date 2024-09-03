@@ -437,4 +437,3 @@ formInputs.forEach(input => {
     input.addEventListener('input', saveRoLocalStorage)
 })
 
-window.addEventListener('DOMContentLoaded', loadFormLocalStorage)
