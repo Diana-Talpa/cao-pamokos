@@ -1,70 +1,12 @@
+import renderSingleStudentItem from './renderStudent.js'
+import { addStudentToStorage, clearFormStorageData, getFormDataFromStorage, getStudentsFromStorage, removeStudentFromStorage, storeFormDataInStorage } from './storage.js'
+
 const studentForm = document.querySelector('#student-form')
 const studentsList = document.querySelector('#students-list')
 
-const INITIAL_DATA = [
-    {
-        name: 'Sam',
-        surname: 'Buca',
-        age: 24,
-        phone: '869268973',
-        email: 'rokas@gmail.com',
-        itKnowledge: 7,
-        interests: ['JavaScript', 'PHP', 'C++'],
-        group: 'FEUA-16',
-    },
-    {
-        name: 'Kick',
-        surname: 'Ass',
-        age: 22,
-        phone: '+37069268973',
-        email: 'arunas@gmail.com',
-        itKnowledge: 9,
-        interests: ['C', 'C++'],
-        group: 'FEUA-17',
-    },
-    {
-        name: 'Bil',
-        surname: 'Asde',
-        age: 20,
-        phone: '869987529',
-        email: 'pricepas@gmail.com',
-        itKnowledge: 10,
-        interests: ['JavaScript', 'PHP', 'C++', 'Python'],
-        group: 'FEU 16',
-    },
-    {
-        name: 'Alus',
-        surname: 'Sula',
-        age: 30,
-        phone: '+370612141',
-        email: 'Petras@gmail.com',
-        itKnowledge: 6,
-        interests: ['C#'],
-        group: 'FEU 14',
-    },
-    {
-        name: 'Sam',
-        surname: 'Buca',
-        age: 24,
-        phone: '869268973',
-        email: 'rokas@gmail.com',
-        itKnowledge: 7,
-        interests: ['JavaScript', 'PHP', 'C++'],
-        group: 'FEU 14',
-    },
-]
-
-function itKnowledgeInputHandler() {
-    const input = studentForm.querySelector('#it-knowledge')
-    const output = studentForm.querySelector('#it-knowledge-output')
-
-    output.value = input.value
-
-    input.addEventListener('input', () => {
-        output.value = input.value
-    })
-}
-
+getFormDataFromStorage(studentForm)
+storeFormDataInStorage(studentForm)
+renderInitialData()
 itKnowledgeInputHandler()
 
 studentForm.addEventListener('submit', event => {
@@ -72,7 +14,33 @@ studentForm.addEventListener('submit', event => {
 
     const form = event.target
 
+    const formIsValid = validateForm(form)
+
+    if (!formIsValid) {
+        alertMessage('Form is invalid', 'color-danger')
+        return
+    }
+    
+    createNewStudent(form)
+})
+
+function createNewStudent(form) {
+    const newStudentData = getStudentFormData(form)
+    const studentElement = renderSingleStudentItem(newStudentData)
+    studentsList.prepend(studentElement)
+
+    addStudentToStorage(newStudentData)
+    clearFormStorageData()
+    itKnowledgeInputHandler()
+    form.reset()
+
+    alertMessage(`Student (${newStudentData.name} ${newStudentData.surname}) was successfully created!`, 'color-success')
+}
+
+function validateForm(form) {
     let formIsValid = true
+
+    form.querySelectorAll('.input-error-message').forEach(element => element.remove())
 
     const requiredInputs = form.querySelectorAll('input:required')
     requiredInputs.forEach(input => {
@@ -81,15 +49,18 @@ studentForm.addEventListener('submit', event => {
         if (!input.value) {
             input.classList.add('invalid-input')
             formIsValid = false
+
+            const inputErrorMessage = document.createElement('span')
+            inputErrorMessage.classList.add('input-error-message')
+            inputErrorMessage.textContent = 'This field is required'
+            input.after(inputErrorMessage)
         }
     })
 
-    if (!formIsValid) {
-        console.log('Forma nevalidi')
-        return
-    }
+    return formIsValid
+}
 
-    
+function getStudentFormData(form) {
     const nameInput = form.name
     const surnameInput = form.surname
     const ageInput = form.age
@@ -107,76 +78,24 @@ studentForm.addEventListener('submit', event => {
     const itKnowledge = itKnowledgeInput.value
     const group = groupInput.value
 
-    // const interests = []
-    // for (let i = 0; i < interestInputs.length; i++) {
-    //     interests.push(interestInputs[i].value)
-    // }
-
-    // const interests = Array.from(interestInputs).map(input => input.value)
     const interests = [...interestInputs].map(input => input.value)
-    
-    const studentItem = document.createElement('div')
-    studentItem.classList.add('student-item')
 
-    const nameElement = document.createElement('h2')
-    nameElement.textContent = `${name} ${surname}`
+    const newStudentData = {
+        name,
+        surname,
+        age,
+        phone,
+        email,
+        itKnowledge,
+        group,
+        interests,
+        id: Math.random()
+    }
 
-    const ageElement = document.createElement('p')
-    ageElement.textContent = `Age: ${age}`
+    return newStudentData
+}
 
-    const phoneElement = document.createElement('p')
-    phoneElement.textContent = `Phone: ****`
-
-    const emailElement = document.createElement('p')
-    emailElement.textContent = `Email: ****`
-
-    const itKnowledgeElement = document.createElement('p')
-    itKnowledgeElement.textContent = `IT Knowledge: ${itKnowledge}`
-
-    const groupElement = document.createElement('p')
-    groupElement.textContent = `Group: ${group}`
-
-    const interestsElement = document.createElement('p')
-    interestsElement.textContent = `Interests: ${interests.join(', ')}`
-
-    const privateInfoButton = document.createElement('button')
-    privateInfoButton.textContent = 'Show private info'
-
-    let privateInfoIsHidden = true
-
-    privateInfoButton.addEventListener('click', () => {
-        if (privateInfoIsHidden) {
-            privateInfoButton.textContent = 'Hide private info'
-            phoneElement.textContent = `Phone: ${phone}`
-            emailElement.textContent = `Email: ${email}`
-        } else {
-            privateInfoButton.textContent = 'Show private info'
-            phoneElement.textContent = `Phone: ****`
-            emailElement.textContent = `Email: ****`
-        }
-        
-        privateInfoIsHidden = !privateInfoIsHidden
-    })
-
-    const removeStudentButton = document.createElement('button')
-    removeStudentButton.textContent = 'Remove Student'
-
-    removeStudentButton.addEventListener('click', () => {
-        studentItem.remove()
-
-        alertMessage(`Student (${name} ${surname}) was successfully removed!`, 'color-danger')
-    })
-
-    studentItem.append(nameElement, ageElement, phoneElement, emailElement, itKnowledgeElement, groupElement, interestsElement, privateInfoButton, removeStudentButton)
-    studentsList.prepend(studentItem)
-
-    form.reset()
-    itKnowledgeInputHandler()
-
-    alertMessage(`Student (${name} ${surname}) was successfully created!`, 'color-success')
-})
-
-function alertMessage(text, className) {
+export function alertMessage(text, className) {
     const alertMessage = document.querySelector('#alert-message')
     alertMessage.className = ''
     
@@ -186,4 +105,24 @@ function alertMessage(text, className) {
     setTimeout(() => {
         alertMessage.textContent = ''
     }, 5000)
+}
+
+function itKnowledgeInputHandler() {
+    const input = studentForm.querySelector('#it-knowledge')
+    const output = studentForm.querySelector('#it-knowledge-output')
+
+    output.value = input.value
+
+    input.addEventListener('input', () => {
+        output.value = input.value
+    })
+}
+
+function renderInitialData() {
+    const studentsData = getStudentsFromStorage()
+
+    studentsData.forEach(item => {
+        const studentElement = renderSingleStudentItem(item)
+        studentsList.prepend(studentElement)
+    })
 }
