@@ -1,0 +1,572 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-height: max-content;
+    background-color: #F2F2F2;
+}
+.fixed {
+    width: 100%;
+    position:fixed;
+    top:0;
+    z-index: 99999;
+}
+.fixed-head {
+    
+    height: 80px;
+    display: flex;
+    background-color: #ffff;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+    color: #000;   
+}
+.navigacija{
+        margin-top: 30px;
+}
+.logo {
+    height: 40px;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+.logotipas {
+    margin-bottom: 70px;
+    height: 40px;
+}
+
+.rotate-1 {
+    display: block;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    height: 130px;
+    -webkit-animation: spin 9s linear infinite;
+    -moz-animation: spin 9s linear infinite;
+    animation: spin 9s linear infinite;
+}
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+.rotate-1:hover {
+    -webkit-animation: none;
+}
+
+.fixed-head a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 30px;   
+    
+}
+.fixed-head a:hover {
+    color: #363535;
+}
+.skambinti {
+    height: 40px;
+    width: 150px;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none;
+}
+   
+.skambinti:active{
+    box-shadow: 0px 0px 14px -2px rgba(0,29,255,1);
+
+}
+ 
+.skambinti:hover {
+    background-color: rgb(91, 91, 209);
+}
+ /* top nav end*/
+
+.vidus {
+    max-width: 1150px;
+    
+    margin: auto;
+    margin-top: 80px;
+    font-family: "Roboto", sans-serif;
+}
+.papildoma-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.papildoma {
+    font-family: "Roboto", sans-serif;
+    height: 20px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right: 1px solid rgb(184, 181, 181);
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+    
+}
+.papildoma:last-child {
+    border-right: none;
+}
+.papildoma a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.papildoma:active{
+    color: white;
+    background-color: blue;
+}
+.papildoma a:active {
+    color: white;
+    background-color: blue;
+}
+
+.dvi-puses {
+    display: flex;
+}
+
+.left-side {
+    width: 65%;
+    text-align: left;
+
+}
+
+h1 {
+    font-size: 42px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    width: 90%;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: left;
+}
+.naujienos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-1{
+    margin: 0 15px 0 0;
+    background-color: white;
+    
+    
+}
+.box-2 {
+    margin: 0 15px 0 15px;
+    background-color: white;
+}
+.photo1{
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+}
+.blue {
+    color: blue;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.aprasymas h2{
+    font-size: 24px;
+    margin-bottom: 11px;
+    
+}
+.aprasymas{
+    margin-left: 40px;
+    margin-bottom: 40px;
+    
+}
+.small-image {
+    width: 130px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.boxflex {
+    display: flex;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    width: 350px;
+    margin-top: 30px;
+}
+.box-4 {
+    padding-left: 15px;
+
+}
+.box-6 {
+    padding-left: 15px;
+}
+.mall-aprasymas {
+    padding-left: 20px;
+}
+.small-black-font {
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+/* end of first naujienos part*/
+
+.visos-nauj {
+    display: flex;
+    height: 50px;
+    width: 89%;
+    background-color: white;
+    padding: 40px 30px 30px 40px;
+    border-radius: 10px;
+
+    
+}
+.visos-nauj a{
+    
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    
+}
+.strele{
+    
+    height: 33px;
+    width: 19px;
+    margin-left: 450px;
+    background-color: white;
+    padding-top: 0px;
+}
+
+.video {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.vid1 {
+    text-align: left;
+    font-size: 24px ;
+    font-weight: 500;
+    
+}
+.vid2 {
+font-size: 14px;
+font-weight: 500;
+margin-right: 40px;
+text-align: left;
+}
+
+.vid3 {
+    font-size: 14;
+font-weight: 500;
+text-align: left;
+
+}
+
+
+
+.right-side {
+    width: 25%;
+    margin-left: 10px;
+}
+
+
+/* vaizdo irasu pabaiga*/
+
+.juodas {
+    height: 50px;
+    width: 390px;
+    background-color: #000;
+    color: white;
+    padding-top: 30px;
+}
+.ritmu {
+    width: 80px;
+}
+.audio {
+    display: flex;
+    width: 390px;
+    margin-top: 10px;
+
+}
+audio {
+    height: 80px;
+    width: 400px;
+    background-color: black;
+    
+}
+.play {
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+}
+button {
+    border: 2px solid black;
+}
+.po-audio {
+    text-align: left;
+    width: 390px;
+    background-color: white;
+    margin-bottom: 30px;
+    
+}
+.po-audio p {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.renginys {
+    margin-top: 60px;
+}
+.renginys1 {
+    
+    width: 390px;
+    color: white;
+    background-color: black;
+    text-align: left;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 20px;
+    
+
+}
+h3 {
+    font-size:24px;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.uppercase p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+.renginiu-skiltis a{
+    text-decoration: none;
+    color: white;
+
+}
+.renginys1 img{
+ width: 390px;
+ margin-bottom: 40px;
+}
+
+.renginys2 {
+    width: 380px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.renginys2 h3 {
+    margin-top: 0;
+}
+.renginys3 {
+    
+    height: 180px;
+    width: 390px;
+    color: white;
+    background-color: black;
+    text-align: left;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    
+}
+
+.renginys3 h3 {
+    margin-top: 0;
+}
+
+.menesis{
+    margin: 0;
+    font-size: 12px;
+    padding-top: 10px;
+    height: 20px;
+    width: 80px;
+    background-color: rgb(212, 34, 183);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.data p{
+    font-size: 24px;
+    padding-top: 10px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.data1 {
+    
+    position: absolute;
+    top:60%;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.data {
+    color: black;
+    width: 80px;
+    background-color: white;
+    
+    font-weight: 800;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.data2 {
+
+    position: absolute;
+    top:114%;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.data2 p{
+    padding-top: 10px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.data3 {
+    
+    position: absolute;
+    top: 160%;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.data3 p{
+    padding-top: 10px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.daugiau-button {
+    width: 350px;
+    height: 60px;
+    background-color: white;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    border-radius: 10px;
+
+}
+.daugiau-button a{
+      
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.strelyte {
+    height: 33px;
+    width: 19px;
+    margin-left: 200px;
+    background-color: white;
+    padding-top: 0px;
+}
+footer {
+    background-color: #000;
+    padding-bottom: 150px;
+
+}
+.apacia {
+    margin-top: 200px;
+    
+    display: flex;
+    max-width: 1150px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    line-height: 40px;
+    padding: 100px 0 100px 350px;
+    text-align: left;
+    
+}
+.apacia p {
+    margin-left: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+ul{
+    margin-top: 0;
+}
+.apacia a{
+    color: #929497;
+    text-decoration: none;
+    font-weight: 300;
+}
+.apacia a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    text-decoration-color: white;
+}
+ul li {
+    list-style-type: none;
+}
+.logo-foot {
+    margin-left: 40px;
+    height:40px ;
+    margin-bottom: 60px;
+    color: white;
+}
+.foot2 {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.foot3{
+    margin-left: 450px;
+    margin-top: 120px;
+}
+.foot3 a{
+    margin-right: 20px;
+
+}
+
+.foot4 a:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.foot4 {
+    color:#929497;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    margin-left: 390px;
+    font-size: 14px;
+    margin-top: 200px;
+
+}
+.foot4 a:last-of-type{
+    color: #929497;
+    font-weight: 300;
+}
+.foot4 a:last-of-type:hover {
+    color: white;
+    text-decoration: underline;
+}
+.foot4 a {
+    text-decoration: none;
+    color: white;
+    margin-right: 200px;
+}
+.foot4 img {
+    width: 110px;
+}
