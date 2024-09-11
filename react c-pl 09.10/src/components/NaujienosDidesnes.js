@@ -13,7 +13,6 @@ const NaujienosDidesnes = (props) => {
             <img src={imageSrc} alt="" className="box-1-image, photo1" />
         </div>
     )
-
     return (
         <div className="box-1">
             <a href={url}>
