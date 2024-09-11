@@ -1,3 +1,6 @@
+import NaujienosDidesnes from "./NaujienosDidesnes"
+import NaujienosMazesnes from "./NaujienosMazesnes"
+
 
 
 const LeftSide = () => {
@@ -7,86 +10,28 @@ const LeftSide = () => {
       <h1>Naujienos</h1>
       <div className="naujienos">
 
-        <div className="box-1">
-          <a href="/#">
-            <img className="photo1"
-              src="https://codeacademy.lt/wp-content/uploads/2024/05/315d4ed0-6067-11ed-8c07-f1146d90fed4-1-1024x607.jpg"
-              alt="" />
-          </a>
-          <div className="aprasymas">
-            <p className="blue">Karjera</p>
-            <h2>Kaip junior'ui išnaudoti <br /> „LinkedIn“ savo naudai?</h2>
-            <p>2024-05-28</p>
-          </div>
-        </div>
-        <div className="box-2">
-          <a href="/#">
-            <img className="photo1"
-              src="https://codeacademy.lt/wp-content/uploads/2024/05/nauja-pauliaus-ft.png" alt="" />
-          </a>
-          <div className="aprasymas">
-            <p className="blue">Sėkmės istorijos</p>
+      
+                <NaujienosDidesnes 
+                    title="Kaip junior'ui išnaudoti „LinkedIn“ savo naudai?" 
+                    category="Karjera" 
+                    url="/#" 
+                    imageSrc="https://codeacademy.lt/wp-content/uploads/2024/05/315d4ed0-6067-11ed-8c07-f1146d90fed4-1-1024x607.jpg" 
+                />
+                <NaujienosDidesnes 
+                    title="Sėkmės istorija – įsidarbinimas į Asteri" 
+                    category="Sėkmės istorija 2" 
+                    url="/#" 
+                    imageSrc="https://codeacademy.lt/wp-content/uploads/2024/05/nauja-pauliaus-ft.png" 
+                />
+                
+                <NaujienosMazesnes
+                title="Sėkmės istorija – įsidarbinimas į Asteri" 
+                category="Sėkmės istorija 2" 
+                url="/#" 
+                imageSrc="https://codeacademy.lt/wp-content/uploads/2024/04/DSC_0903-Milda-N-1-scaled-e1714131896738-1024x899.jpg" 
+                 />
 
-            <h2>Sėkmės istorija - <br /> įsidarbinimas į Asteri</h2>
-            <p>2024-05-23</p>
-          </div>
-        </div>
-        <div className="box-3 boxflex">
-          <a href="/#">
-            <img className="small-image"
-              src="https://codeacademy.lt/wp-content/uploads/2024/04/Ovidijus-Zaborskis-1-3-1024x1024.jpeg"
-              alt="" />
-          </a>
-          <div className="mall-aprasymas">
-            <p className="blue">Sekmes istorijos</p>
-            <p className="small-black-font">
-              Sekmes istorija - isidarbinimas i <br /> Bentlay Systems
-            </p>
-            <p> 2024-04-25</p>
-          </div>
-        </div>
-        <div className="box-4 boxflex">
-          <a href="/#">
-            <img className="small-image"
-              src="https://codeacademy.lt/wp-content/uploads/2024/04/DSC_0903-Milda-N-1-scaled-e1714131896738-1024x899.jpg"
-              alt="" />
-          </a>
-          <div className="mall-aprasymas">
-            <p className="blue">Sekmes istorijos</p>
-            <p className="small-black-font">
-              Sekmes istorija - isidarbinimas i <br /> Fresh media
-            </p>
-            <p> 2024-04-25</p>
-          </div>
-        </div>
-        <div className="box-5 boxflex">
-          <a href="/#">
-            <img className="small-image"
-              src="https://codeacademy.lt/wp-content/uploads/2024/04/portrait-Giedrius-Tumosa.jpg" alt="" />
-          </a>
-          <div className="mall-aprasymas">
-            <p className="blue">Sekmes istorijos</p>
-            <p className="small-black-font">
-              Sekmes istorija - isidarbinimas i <br /> Visma Tech
-            </p>
-            <p> 2024-04-25</p>
-          </div>
-        </div>
-        <div className="box-6 boxflex">
-          <a href="/#">
-            <img className="small-image"
-              src="https://codeacademy.lt/wp-content/uploads/2024/04/mp_nuotrauka-1.jpeg" alt="" />
-          </a>
-          <div className="mall-aprasymas">
-            <p className="blue">Sekmes istorijos</p>
-            <p className="small-black-font">
-              Už verslo partnerystes <br /> „CodeAcademy“ programavimo <br />akademijoje
-              bus
-              atsakingas IT ekspertas Marius Pareščius
-            </p>
-            <p> 2024-04-25</p>
-          </div>
-        </div>
+
       </div>
     </section>
     <section>
