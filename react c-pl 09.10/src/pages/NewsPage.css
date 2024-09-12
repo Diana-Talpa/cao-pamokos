@@ -196,9 +196,10 @@ h1 {
     flex-wrap: wrap;
     margin-bottom: 30px;
     padding-right: 15px;
-    width: 340px;
+    width: 330px;
     margin-top: 30px;
     padding-left: 15px;
+    margin-right: 10px;
 }
 
 
@@ -242,27 +243,53 @@ h1 {
 }
 
 .video {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1;
+    
+    
 }
+.video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.vid1 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.vid1:first-of-type {
+  grid-column-end: span 2;
+}
+
+.vid1 iframe {
+  width: 100%;
+}
+.vid1:first-of-type iframe {
+    height: 400px;
+}
+
+.video:first-of-type {
+    grid-column-end: span 2;
+}
+
+
 .vid1 {
     text-align: left;
     font-size: 24px ;
     font-weight: 500;
+    margin-left: 20px;
     
 }
-.vid2 {
-font-size: 14px;
-font-weight: 500;
-margin-right: 40px;
-text-align: left;
-}
+
 
 .vid3 {
-    font-size: 14;
+font-size: 14px;
 font-weight: 500;
 text-align: left;
+margin-left: 20px;
 
 }
 
@@ -287,10 +314,15 @@ text-align: left;
     width: 80px;
 }
 .audio {
-    display: flex;
+    
     width: 390px;
     margin-top: 10px;
 
+}
+.podcast-controls {
+    display: flex;
+    height: 80px;
+    width: 390px;
 }
 audio {
     height: 80px;
@@ -303,8 +335,10 @@ audio {
     height: 50px;
     object-fit: cover;
 }
-button {
+.button {
     border: 2px solid black;
+    width: 120px;
+    
 }
 .po-audio {
     text-align: left;
@@ -355,7 +389,7 @@ h3 {
 }
 .renginys1 img{
  width: 390px;
- margin-bottom: 40px;
+ 
 }
 
 .renginys2 {
@@ -390,12 +424,15 @@ h3 {
     margin: 0;
     font-size: 12px;
     padding-top: 10px;
-    height: 20px;
-    width: 80px;
+    height: 30px;
+    width: 60px;
     background-color: rgb(212, 34, 183);
     color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: block;
+    margin-left: 30px;
+    text-align: center;
 }
 .data p{
     font-size: 24px;
@@ -403,7 +440,9 @@ h3 {
     margin: 0;
     padding-bottom: 10px;
 }
-
+.event-item-image{
+    margin-bottom: 0px;
+}
 .data1 {
     
     position: absolute;
@@ -414,44 +453,19 @@ h3 {
 }
 .data {
     color: black;
-    width: 80px;
+    width: 60px;
+    height: 40px;
     background-color: white;
+    text-align: center;
+    
     
     font-weight: 800;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
-.data2 {
-
-    position: absolute;
-    top:114%;
-    left: 60px;
-    transform: translate(-50%, -50%);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-}
-.data2 p{
-    padding-top: 10px;
-    margin: 0;
-    padding-bottom: 10px;
-}
-
-.data3 {
-    
-    position: absolute;
-    top: 160%;
-    left: 60px;
-    transform: translate(-50%, -50%);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.data3 p{
-    padding-top: 10px;
-    margin: 0;
-    padding-bottom: 10px;
-}
 
 .daugiau-button {
     width: 350px;
