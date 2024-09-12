@@ -1,3 +1,4 @@
+import "./Podkastas.css"
 const Podkastas = ({ image, length, title, date }) => {
     if (!title) {
       return ""

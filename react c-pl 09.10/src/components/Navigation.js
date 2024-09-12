@@ -1,5 +1,3 @@
-// import LargeLink from "./LargeLink"
-// import NewsItem from "./NewsItem"
 
 const Navigation = () => {
     return (

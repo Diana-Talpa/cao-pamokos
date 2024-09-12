@@ -1,6 +1,6 @@
-import NaujienosDidesnes from "./NaujienosDidesnes"
-import NaujienosMazesnes from "./NaujienosMazesnes"
-import Video from "./Video"
+import NaujienosDidesnes from "./NaujienosDidesnes/NaujienosDidesnes"
+import NaujienosMazesnes from "./NaujienosMazesnes/NaujienosMazesnes"
+import Video from "./Video/Video"
 
 
 

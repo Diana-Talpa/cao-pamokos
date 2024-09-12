@@ -1,12 +1,11 @@
+import "./Events.css"
+
 const Events = (props) => {
     const { imageSrc, location, day, month, tittle} = props
   
-
-
     if ( !tittle) {
         return '';
     }
-
 
     return (
       <div className="renginys1 uppercase">

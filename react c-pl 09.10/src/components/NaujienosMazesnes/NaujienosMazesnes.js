@@ -1,3 +1,4 @@
+import "./NaujienosMazesnes.css"
 const NaujienosMazesnes = (props) => {
 
     const { title, date, category, url, imageSrc } = props;

@@ -1,5 +1,4 @@
 
-
 const Foot4 = () => {
   return (
     <div className="foot4">

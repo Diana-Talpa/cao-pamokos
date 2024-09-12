@@ -1,5 +1,5 @@
-import Podkastas from "./Podkastas"
-import Events from "./Events"
+import Podkastas from "./Podkastas/Podkastas"
+import Events from "./Events/Events"
 
 const RightSide = () => {
   return (

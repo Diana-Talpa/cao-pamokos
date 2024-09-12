@@ -1,0 +1,29 @@
+
+.small-image {
+    width: 130px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.boxflex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    width: 330px;
+    margin-top: 30px;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+
+
+
+.mall-aprasymas {
+    padding-left: 20px;
+}
+.small-black-font {
+    font-size: 14px;
+    font-weight: 500;
+    
+}

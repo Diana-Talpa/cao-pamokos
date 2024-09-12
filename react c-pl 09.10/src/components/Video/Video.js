@@ -1,3 +1,4 @@
+import "./Video.css"
 const Video = (props) => {
 
   const { tittle, src} = props

@@ -1,0 +1,50 @@
+.video {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1;
+    
+    
+}
+.video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.vid1 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.vid1:first-of-type {
+  grid-column-end: span 2;
+}
+
+.vid1 iframe {
+  width: 100%;
+}
+.vid1:first-of-type iframe {
+    height: 400px;
+}
+
+.video:first-of-type {
+    grid-column-end: span 2;
+}
+
+
+.vid1 {
+    text-align: left;
+    font-size: 24px ;
+    font-weight: 500;
+    margin-left: 20px;
+    
+}
+
+
+.vid3 {
+font-size: 14px;
+font-weight: 500;
+text-align: left;
+margin-left: 20px;
+
+}

@@ -1,6 +1,3 @@
-
-
-
 const Apacia = () => {
   return (
     <div className="apacia">
