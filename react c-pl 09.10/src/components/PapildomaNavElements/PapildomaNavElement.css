@@ -1,0 +1,38 @@
+
+.papildoma {
+    font-family: "Roboto", sans-serif;
+    height: 20px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right: 1px solid rgb(184, 181, 181);
+    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
+    display: flex;
+    
+}
+
+.papildoma:last-child {
+    border-right: none;
+}
+.papildoma a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.papildoma:active{
+    color: white;
+    background-color: blue;
+}
+.papildoma a:active {
+    color: white;
+    background-color: blue;
+}
+.bandymas{
+    display: flex;
+    justify-content: flex-end;
+}
