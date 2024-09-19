@@ -1,7 +1,7 @@
 import "./Video.css"
 const Video = (props) => {
 
-  const { tittle, src} = props
+  const { title, src} = props
 
   if ( !src) {
     return '';
@@ -10,7 +10,7 @@ const Video = (props) => {
     return (
       <div className="vid1">
           <p ></p>
-          <iframe tittle={tittle} width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" src={src} allowFullScreen></iframe>
+          <iframe title={title} width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" src={src} allowFullScreen></iframe>
       </div>
     )
   }

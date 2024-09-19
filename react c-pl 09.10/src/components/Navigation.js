@@ -1,4 +1,5 @@
-
+import "./NavigationElement/NavigationElement.js"
+import NavigationElement from "./NavigationElement/NavigationElement.js"
 const Navigation = () => {
     return (
         <nav>
@@ -10,14 +11,32 @@ const Navigation = () => {
                   alt="Code academy logotype" />
               </a>
             </div>
-            <div className="navigacija"><a href="/#">Studentams</a></div>
-            <div className="navigacija"><a href="/#">Karjeros centras</a></div>
-            <div className="navigacija"><a href="/#">Programos</a></div>
-            <div className="navigacija"><a href="/#">IT testas</a></div>
-            <div className="navigacija"><a href="/#">Apie mus</a></div>
-            <div className="navigacija"><a href="/#">Verslui</a></div>
-            <div className="navigacija"><a href="/#">Kontaktai</a></div>
-            <div className="navigacija"><a href="/#">EN</a></div>
+           <NavigationElement
+           text ="Studentams"
+           />
+            
+            <NavigationElement
+           text ="Karjeros centras"
+           />
+              <NavigationElement
+           text ="Prigramos"
+           />
+              <NavigationElement
+           text ="IT testas"
+           />
+              <NavigationElement
+           text ="Apie mus"
+           />
+              <NavigationElement
+           text ="Vrslui"
+           />
+              <NavigationElement
+           text ="Kontaktai"
+           />
+              <NavigationElement
+           text ="EU"
+           />
+            
             <button className="skambinti">Skambinti</button>
           </div>
         </div>

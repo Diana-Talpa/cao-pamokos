@@ -5,25 +5,7 @@
     max-height: max-content;
     background-color: #F2F2F2;
 }
-.fixed {
-    width: 100%;
-    position:fixed;
-    top:0;
-    z-index: 99999;
-}
-.fixed-head {
-    
-    height: 80px;
-    display: flex;
-    background-color: #ffff;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
-    box-shadow: 0 7px 15px 0 rgba(0,0,0,.07);
-    color: #000;   
-}
-.navigacija{
-        margin-top: 30px;
-}
+
 .logo {
     height: 40px;
     margin-right: 120px;
@@ -52,39 +34,6 @@
     -webkit-animation: none;
 }
 
-.fixed-head a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-    margin-right: 30px;   
-    
-}
-.fixed-head a:hover {
-    color: #363535;
-}
-.skambinti {
-    height: 40px;
-    width: 150px;
-    background-color: blue;
-    border-radius: 30px;
-    padding: 10px;
-    margin-top: 20px;
-    color: white;
-    font-weight: 500;
-    font-size: 11px;
-    text-transform: uppercase;
-    border: none;
-}
-   
-.skambinti:active{
-    box-shadow: 0px 0px 14px -2px rgba(0,29,255,1);
-
-}
- 
-.skambinti:hover {
-    background-color: rgb(91, 91, 209);
-}
  /* top nav end*/
 
 .vidus {
