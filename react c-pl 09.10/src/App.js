@@ -4,6 +4,7 @@ import NewsPage from './pages/NewsPage';
 import { CounterPage } from './pages/CounterPage.js';
 import CitiesPage from './pages/CitiesPage.js'
 import StudentsPage from './pages/StudentsPage.js';
+import CarsPage from './pages/CarsPage.js';
 
 function App() {
   
@@ -11,7 +12,8 @@ function App() {
     // <NewsPage />
     // <CounterPage/>
     // <CitiesPage/>
-    <StudentsPage />
+    // <StudentsPage />
+    <CarsPage/>
   )
 }
 

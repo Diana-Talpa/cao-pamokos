@@ -7,7 +7,7 @@ const VidusSection = () => {
     <div className="vidus">
     <PapildomaNav />
     <DviPuses />
-    </div>
+    </div> 
   )
 }
 
