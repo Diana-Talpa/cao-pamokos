@@ -1,0 +1,23 @@
+nav {
+    background-color: bisque;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 5px 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+a.active {
+    text-decoration: underline;
+    color: blueviolet;
+}
