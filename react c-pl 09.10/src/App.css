@@ -21,3 +21,22 @@ a.active {
     text-decoration: underline;
     color: blueviolet;
 }
+
+ul.sub-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: blue;
+    
+}
+ul.sub-menu a{
+    color: white;
+}
+li:hover > ul.sub-menu {
+    display: flex;
+}
+
+.menu-list > li {
+    position: relative;
+}
