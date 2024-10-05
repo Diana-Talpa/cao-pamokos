@@ -8,7 +8,7 @@ const Podkastas = ({ image, length, title, date }) => {
       <div className="audio">
           <div className="podcast-controls">
               {image && <img src={image} alt="" className="ritmu" />}
-              {length && <div className="juodas">Trukmė: {length}</div>}
+              {length && <div className="juodas">Trukmė N: {length}</div>}
               <button className="button">Plays</button>
           </div>
           <div className="po-audio">
