@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react'
+import Header from './Header'
 
 const ProjectPostsPage = () => {
   const [posts, setPosts] = useState ([])
@@ -10,6 +11,7 @@ const ProjectPostsPage = () => {
   },[])
   return (
     <div>
+      <Header/>
       <h1>Posts  List</h1>
 
 <ul>

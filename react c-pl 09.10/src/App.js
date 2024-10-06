@@ -43,7 +43,7 @@ function App() {
         {/* <Route path='/api/project/posts/:postId' element={<ProjectPostPage />} /> */}
 
         <Route path='/api/project/users' element={<ProjectUsersPage />} />
-        {/* <Route path='/api/project/users/:id' element={<ProjectUserPage />} /> */}
+        <Route path='/api/project/users/:id' element={<ProjectUsersPage />} />
 
         <Route path='/api/project/albums' element={<ProjectsAlbumsPage />} /> 
 
