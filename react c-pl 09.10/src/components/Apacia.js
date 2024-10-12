@@ -32,13 +32,13 @@ const Apacia = () => {
                   <a href="/#">Karjera-We are hiring!</a>
                 </li>
                 <li>
-                  <a href="/#">Verslui</a>
+                  <a href="/#">Verslui </a>
                 </li>
                 <li>
-                  <a href="/#">ES parama</a>
+                  <a href="/#">ES parama </a>
                 </li>
                 <li>
-                  <a href="/#">Kontaktai</a>
+                  <a href="/#">Kontaktai </a>
                 </li>
               </ul>
 
