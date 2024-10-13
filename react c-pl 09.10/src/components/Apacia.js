@@ -8,13 +8,13 @@ const Apacia = () => {
 
               <ul>
                 <li>
-                  <a href="/#">Studentams</a>
+                  <a href="/#">Studentams ir S</a>
                 </li>
                 <li>
                   <a href="/#">Karjeros centras</a>
                 </li>
                 <li>
-                  <a href="/#">Programos</a>
+                  <a href="/#">Programos S</a>
                 </li>
                 <li>
                   <a href="/#">Uzt 100% finansavimas</a>
