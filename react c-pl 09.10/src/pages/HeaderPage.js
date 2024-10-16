@@ -14,7 +14,7 @@ export const HeaderPage = () => {
         <li>
             <NavLink to='/basics/'>Basics</NavLink>
             <ul className='sub-menu'>
-                <li><NavLink to='basics/news'>News</NavLink></li>
+                <li><NavLink to='basics/news'>News list</NavLink></li>
 
             </ul>
             </li>
